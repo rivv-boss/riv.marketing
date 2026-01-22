@@ -1,0 +1,1472 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Jan 22 2026 13:01:47 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="696f571dfbae717b915a9d28" data-wf-site="696f571bfbae717b915a9ca7" lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Website Name</title>
+  <meta content="Place website meta description here" name="description">
+  <meta content="Website Name" property="og:title">
+  <meta content="Place website meta description here" property="og:description">
+  <meta content="Website Name" property="twitter:title">
+  <meta content="Place website meta description here" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/newriv.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+@font-face {
+  font-family: 'Hagiburtonsignature';
+  src: url('../fonts/HagiburtonSignature.woff2') format('woff2'),
+  font-weight: 400;
+  font-style: normal;
+}
+/* Now your override */
+.font-signature {
+  font-family: 'Hagiburtonsignature', Arial, sans-serif !important;
+  font-size: 4rem !important;
+  font-weight: 400 !important;
+}
+</style>
+  <style>
+/* === LOGO === */
+.button_main_icon_logo {
+  width: 0;
+  overflow: hidden;
+  margin-right: 0;
+  opacity: 0;
+  transform: translateX(0.5rem) rotate(0deg);
+  pointer-events: none;
+}
+.button_main_icon_logo,
+.button_main_icon_plus,
+.button_main_icon_logo svg,
+.button_main_icon_plus svg {
+  pointer-events: none;
+}
+/* TABLET + MOBILE */
+@media (max-width: 1024px) {
+  .projects_meta {
+    display: none;
+  }
+}
+.projects_meta_desc {
+  white-space: pre-line;
+}
+</style>
+</head>
+<body>
+  <div class="page_wrap">
+    <div class="u-position-fixed">
+      <div class="w-embed">
+        <style>
+::before, ::after {
+	box-sizing: border-box;
+}
+.w-embed:before, .w-embed:after,
+.w-richtext:before, .w-richtext:after {
+	content: unset;
+}
+html {
+	background-color: var(--_theme---background);
+}
+button {
+	background-color: unset;
+	padding: unset;
+	text-align: inherit;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+}
+svg {
+	max-width: 100%;
+}
+@media (prefers-color-scheme: light) {
+	option { color: black; }
+}
+img::selection {
+	background: transparent;
+}
+/* Typography */
+body {
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+/* Clear Defaults */
+a:not([class]) {
+	text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,label {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+	text-wrap: inherit;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+select:has(option[value=""]:checked) {
+	color: color-mix(in lab, currentcolor 60%, transparent)
+}
+/* Selection Color */
+::selection {
+	background-color: var(--_theme---selection--background);
+	color: var(--_theme---selection--text);
+}
+/* Margin Trim */
+:is(.u-margin-trim,.w-richtext,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > :not(:not(.w-condition-invisible,.u-cover-absolute,.u-ignore-trim) ~ :not(.w-condition-invisible,.u-cover-absolute,.u-ignore-trim)),
+:is(.u-margin-trim,.w-richtext,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > :not(:not(.w-condition-invisible,.u-cover-absolute,.u-ignore-trim) ~ :not(.w-condition-invisible,.u-cover-absolute,.u-ignore-trim)).u-display-contents > :first-child {
+	margin-top: 0;
+}
+:is(.u-margin-trim,.w-richtext,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > :not(:has(~ :not(.w-condition-invisible,.u-cover-absolute,.u-ignore-trim))),
+:is(.u-margin-trim,.w-richtext,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > :not(:has(~ :not(.w-condition-invisible,.u-cover-absolute,.u-ignore-trim))).u-display-contents > :last-child {
+	margin-bottom: 0;
+}
+/* Line Height Trim */
+:not(.u-text-trim-off) > :is(h1,h2,h3,h4,h5,h6,p):not(.u-text-trim-off,:has([class*="u-text-style-"]))::before,
+[class*="u-text-style-"]:not(.u-text-trim-off,:has(h1,h2,h3,h4,h5,h6,p))::before {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-top));
+}
+:not(.u-text-trim-off) > :is(h1,h2,h3,h4,h5,h6,p):not(.u-text-trim-off,:has([class*="u-text-style-"]))::after,
+[class*="u-text-style-"]:not(.u-text-trim-off,:has(h1,h2,h3,h4,h5,h6,p))::after {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-bottom));
+}
+/* Rich Text Links */
+.w-richtext a {
+	position: relative;
+	z-index: 4;
+}
+/* Line Clamp */
+[class*="u-line-clamp"]:not(.w-richtext),
+[class*="u-line-clamp"].w-richtext > * {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+[class*="u-line-clamp"].w-richtext > :not(:first-child) { display: none; }
+.u-line-clamp-2:not(.w-richtext), .u-line-clamp-2.w-richtext > * { -webkit-line-clamp: 2; }
+.u-line-clamp-3:not(.w-richtext), .u-line-clamp-3.w-richtext > * { -webkit-line-clamp: 3; }
+.u-line-clamp-4:not(.w-richtext), .u-line-clamp-4.w-richtext > * { -webkit-line-clamp: 4; }
+/* Text Max Width */
+.u-text > * {
+	width: 100%;
+	max-width: inherit !important;
+  margin-inline: 0 !important;
+	margin-top: 0 !important;
+}
+/* Background Slot Children */
+.u-background-slot > * {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: unset !important;
+}
+/* Hide */
+.u-hide-if-empty:empty,
+.u-hide-if-empty:has(> *):not(:has(> :not(.w-condition-invisible))),
+.u-hide-if-empty-cms:not(:has(.w-dyn-item)),
+[class*="u-layout-column"]:empty {
+	display: none !important;
+}
+/* Focus State */
+a, button, :where([tabindex]), input {
+	outline-offset: var(--focus--offset-outer);
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible {
+	outline-color: var(--_theme---text);
+	outline-width: var(--focus--width);
+	outline-style: solid;
+}
+/* Disabled */
+[data-button]:has(button:disabled) {
+	opacity: 0.5;
+  pointer-events: none;
+}
+/* Global / Clickable Component */
+.wf-design-mode .clickable_wrap { z-index: 0; }
+.clickable_wrap a[href="#"] { display: none; }
+.clickable_wrap a[href="#"] ~ button { display: block; }
+/* Number Attributes */
+[data-number="-1"]{--number: initial;}[data-number="0"]{--number: 0;}[data-number="1"]{--number:1}[data-number="2"]{--number:2}[data-number="3"]{--number:3}[data-number="4"]{--number:4}[data-number="5"]{--number:5}[data-number="6"]{--number:6}[data-number="7"]{--number:7}[data-number="8"]{--number:8}[data-number="9"]{--number:9}
+[data-number="10"]{--number:10}[data-number="11"]{--number:11}[data-number="12"]{--number:12}[data-number="13"]{--number:13}[data-number="14"]{--number:14}[data-number="15"]{--number:15}[data-number="16"]{--number:16}[data-number="17"]{--number:17}[data-number="18"]{--number:18}[data-number="19"]{--number:19}
+[data-number="20"]{--number:20}[data-number="21"]{--number:21}[data-number="22"]{--number:22}[data-number="23"]{--number:23}[data-number="24"]{--number:24}[data-number="25"]{--number:25}[data-number="26"]{--number:26}[data-number="27"]{--number:27}[data-number="28"]{--number:28}[data-number="29"]{--number:29}
+[data-number="30"]{--number:30}[data-number="31"]{--number:31}[data-number="32"]{--number:32}[data-number="33"]{--number:33}[data-number="34"]{--number:34}[data-number="35"]{--number:35}[data-number="36"]{--number:36}[data-number="37"]{--number:37}[data-number="38"]{--number:38}[data-number="39"]{--number:39}
+[data-number="40"]{--number:40}[data-number="41"]{--number:41}[data-number="42"]{--number:42}[data-number="43"]{--number:43}[data-number="44"]{--number:44}[data-number="45"]{--number:45}[data-number="46"]{--number:46}[data-number="47"]{--number:47}[data-number="48"]{--number:48}[data-number="49"]{--number:49}
+[data-number="50"]{--number:50}[data-number="51"]{--number:51}[data-number="52"]{--number:52}[data-number="53"]{--number:53}[data-number="54"]{--number:54}[data-number="55"]{--number:55}[data-number="56"]{--number:56}[data-number="57"]{--number:57}[data-number="58"]{--number:58}[data-number="59"]{--number:59}
+[data-number="60"]{--number:60}[data-number="61"]{--number:61}[data-number="62"]{--number:62}[data-number="63"]{--number:63}[data-number="64"]{--number:64}[data-number="65"]{--number:65}[data-number="66"]{--number:66}[data-number="67"]{--number:67}[data-number="68"]{--number:68}[data-number="69"]{--number:69}
+[data-number="70"]{--number:70}[data-number="71"]{--number:71}[data-number="72"]{--number:72}[data-number="73"]{--number:73}[data-number="74"]{--number:74}[data-number="75"]{--number:75}[data-number="76"]{--number:76}[data-number="77"]{--number:77}[data-number="78"]{--number:78}[data-number="79"]{--number:79}
+[data-number="80"]{--number:80}[data-number="81"]{--number:81}[data-number="82"]{--number:82}[data-number="83"]{--number:83}[data-number="84"]{--number:84}[data-number="85"]{--number:85}[data-number="86"]{--number:86}[data-number="87"]{--number:87}[data-number="88"]{--number:88}[data-number="89"]{--number:89}
+[data-number="90"]{--number:90}[data-number="91"]{--number:91}[data-number="92"]{--number:92}[data-number="93"]{--number:93}[data-number="94"]{--number:94}[data-number="95"]{--number:95}[data-number="96"]{--number:96}[data-number="97"]{--number:97}[data-number="98"]{--number:98}[data-number="99"]{--number:99}[data-number="100"]{--number:100}
+/* State Manager */
+[data-state] { --_state---true: 1; --_state---false: 0; }
+.is-active,
+[data-state~="checked"]:is(:checked, :has(:checked)),
+[data-state~="current"]:is(.w--current, :has(.w--current)),
+[data-state~="open"]:is(.w--open, :has(.w--open)),
+[data-state~="pressed"]:is([aria-pressed="true"], :has([aria-pressed="true"])),
+[data-state~="expanded"]:is([aria-expanded="true"], :has([aria-expanded="true"])),
+[data-state~="external"]:is([target="_blank"], :has([target="_blank"])) { 
+	--_state---true: 0; --_state---false: 1;
+}
+.wf-design-mode [data-trigger~="preview"],
+[data-trigger~="focus"]:is(:focus-visible, :has(:focus-visible)),
+[data-trigger~="group"]:has([data-trigger~="focus-other"]:focus-visible, [data-trigger~="focus-other"] :focus-visible)
+  [data-trigger~="focus-other"]:not(:focus-visible, :has(:focus-visible)) {
+	--_trigger---on: 0; --_trigger---off: 1;
+}
+@media (hover: hover) {
+	[data-trigger~="hover"]:hover,
+  [data-trigger~="hover-if-clickable"]:has(.clickable_wrap:not(.w-condition-invisible)):hover,
+	[data-trigger~="group"]:has([data-trigger~="hover-other"]:hover) [data-trigger~="hover-other"]:not(:hover) { 
+		--_trigger---on: 0; --_trigger---off: 1;
+	}
+	[data-trigger~="hover-other"]:hover { --_trigger---on: 1 !important; --_trigger---off: 0 !important; }
+}
+@media (hover: none) {
+  [data-trigger~="mobile"] { --_trigger---on: 0; --_trigger---off: 1; }
+}
+/* Slot Styler */
+[data-slot] > .w-dyn-list,
+[data-slot] > .w-dyn-list > *,
+[data-slot] > .w-dyn-list > * > *,
+[data-slot] > .u-display-contents > .w-dyn-list,
+[data-slot] > .u-display-contents > .w-dyn-list > *,
+[data-slot] > .u-display-contents > .w-dyn-list > * > *,
+[data-slot] > .u-display-contents > .u-display-contents > .w-dyn-list,
+[data-slot] > .u-display-contents > .u-display-contents > .w-dyn-list > *,
+[data-slot] > .u-display-contents > .u-display-contents > .w-dyn-list > * > * {
+  display: contents;
+}
+/* Layout Slot */
+.u-layout-column-2:has(> :not(.u-image-wrapper,.u-video,.u-iframe-wapper,.u-overlay)) {
+	aspect-ratio: auto;
+  border-radius: 0;
+  overflow: visible;
+}
+/* Responsive Styles */
+[data-large-columns="1"] { display: flex; }
+[data-large-columns="2"] { display: grid; --_column-count---value: 2; }
+[data-large-columns="3"] { display: grid; --_column-count---value: 3; }
+[data-large-columns="4"] { display: grid; --_column-count---value: 4; }
+[data-large-columns="5"] { display: grid; --_column-count---value: 5; }
+[data-large-columns="6"] { display: grid; --_column-count---value: 6; }
+[data-large-columns="7"] { display: grid; --_column-count---value: 7; }
+[data-large-columns="8"] { display: grid; --_column-count---value: 8; }
+[data-large-columns="9"] { display: grid; --_column-count---value: 9; }
+[data-large-columns="10"] { display: grid; --_column-count---value: 10; }
+[data-large-columns="11"] { display: grid; --_column-count---value: 11; }
+[data-large-columns="12"] { display: grid; --_column-count---value: 12; }
+.slider_offset { --slide-count: var(--lg); --lg: 3; --md: var(--lg); --sm: var(--md); --xs: var(--sm); }
+@container (width < 50em) {
+  * {
+    --_responsive---large: 0;
+    --_responsive---medium: 1;
+    --flex-medium: flex;
+    --none-medium: none;
+    --column-medium: column;
+    --row-medium: row;
+    --start-medium: start;
+    --center-medium: center;
+    --end-medium: end;
+    --relative-medium: relative;
+  }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="1"] { display: flex; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="2"] { display: grid; --_column-count---value: 2; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="3"] { display: grid; --_column-count---value: 3; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="4"] { display: grid; --_column-count---value: 4; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="5"] { display: grid; --_column-count---value: 5; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="6"] { display: grid; --_column-count---value: 6; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="7"] { display: grid; --_column-count---value: 7; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="8"] { display: grid; --_column-count---value: 8; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="9"] { display: grid; --_column-count---value: 9; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="10"] { display: grid; --_column-count---value: 10; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="11"] { display: grid; --_column-count---value: 11; }
+  :not([data-wf--grid--variant*="auto"]) > [data-medium-columns="12"] { display: grid; --_column-count---value: 12; }
+	.u-order-first-medium { order: -1; }
+	.u-order-auto-medium { order: 0; }
+	.u-order-last-medium { order: 1; }
+	.u-display-contents-medium { display: contents; }
+	.u-display-block-medium { display: block; }
+	.u-display-grid-medium { display: grid; }
+	.u-display-flex-medium { display: flex; }
+	.u-display-none-medium { display: none; }
+	.u-all-unset-medium { all: unset; }
+	.slider_offset { --slide-count: var(--md); }
+}
+@container (width < 35em) {
+  * {
+    --_responsive---medium: 0;
+    --_responsive---small: 1;
+    --flex-small: flex;
+    --none-small: none;
+    --column-small: column;
+    --row-small: row;
+    --start-small: start;
+    --center-small: center;
+    --end-small: end;
+		--relative-small: relative;
+  }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="1"] { display: flex; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="2"] { display: grid; --_column-count---value: 2; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="3"] { display: grid; --_column-count---value: 3; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="4"] { display: grid; --_column-count---value: 4; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="5"] { display: grid; --_column-count---value: 5; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="6"] { display: grid; --_column-count---value: 6; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="7"] { display: grid; --_column-count---value: 7; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="8"] { display: grid; --_column-count---value: 8; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="9"] { display: grid; --_column-count---value: 9; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="10"] { display: grid; --_column-count---value: 10; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="11"] { display: grid; --_column-count---value: 11; }
+  :not([data-wf--grid--variant*="auto"]) > [data-small-columns="12"] { display: grid; --_column-count---value: 12; }
+	.u-order-first-small { order: -1; }
+	.u-order-auto-small { order: 0; }
+	.u-order-last-small { order: 1; }
+	.u-display-contents-small { display: contents; }
+	.u-display-block-small { display: block; }
+	.u-display-grid-small { display: grid; }
+	.u-display-flex-small { display: flex; }
+	.u-display-none-small { display: none; }
+	.u-all-unset-small { all: unset; }
+	.slider_offset { --slide-count: var(--sm); }
+}
+@container (width < 20em) {
+  * {
+    --_responsive---small: 0;
+    --_responsive---xsmall: 1;
+    --flex-xsmall: flex;
+    --none-xsmall: none;
+    --column-xsmall: column;
+    --row-xsmall: row;
+    --start-xsmall: start;
+    --center-xsmall: center;
+    --end-xsmall: end;
+		--relative-xsmall: relative;
+  }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="1"] { display: flex; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="2"] { display: grid; --_column-count---value: 2; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="3"] { display: grid; --_column-count---value: 3; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="4"] { display: grid; --_column-count---value: 4; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="5"] { display: grid; --_column-count---value: 5; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="6"] { display: grid; --_column-count---value: 6; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="7"] { display: grid; --_column-count---value: 7; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="8"] { display: grid; --_column-count---value: 8; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="9"] { display: grid; --_column-count---value: 9; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="10"] { display: grid; --_column-count---value: 10; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="11"] { display: grid; --_column-count---value: 11; }
+  :not([data-wf--grid--variant*="auto"]) > [data-xsmall-columns="12"] { display: grid; --_column-count---value: 12; }
+	.u-order-first-xsmall { order: -1; }
+	.u-order-auto-xsmall { order: 0; }
+	.u-order-last-xsmall { order: 1; }
+	.u-display-contents-xsmall { display: contents; }
+	.u-display-block-xsmall { display: block; }
+	.u-display-grid-xsmall { display: grid; }
+	.u-display-flex-xsmall { display: flex; }
+	.u-display-none-xsmall { display: none; }
+	.u-all-unset-xsmall { all: unset; }
+	.slider_offset { --slide-count: var(--xs); }
+}
+</style>
+      </div>
+    </div>
+    <div class="guide_wrap">
+      <div class="w-embed">
+        <style>
+html.wf-design-mode .guide_wrap {
+	display: block;
+}
+.guide_layout {
+	counter-reset: gridguides;
+}
+.guide_layout > div::before {
+  counter-increment: gridguides;
+  content: counter(gridguides);
+}
+</style>
+      </div>
+      <div data-padding-bottom="none" data-padding-top="none" class="guide_contain u-container">
+        <div class="guide_layout">
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+          <div class="guide_column"></div>
+        </div>
+      </div>
+    </div>
+    <div data-wf--nav--nav-position="default" class="nav_component">
+      <div class="u-embed-css w-embed">
+        <style>
+:root {
+	--nav--menu-open-duration: 400ms;
+	--nav--menu-close-duration: 400ms;
+	--nav--dropdown-open-duration: 400ms;
+	--nav--dropdown-close-duration: 400ms;
+}
+body:has(.nav_component .w-nav-button.w--open):not(:has(.nav_desktop_wrap:not(.w-condition-invisible))) { overflow: hidden; }
+/* on smaller screens */
+@media (width < 65em) {
+	/* disable scroll when mobile menu is open */
+	body:has(.nav_component .w-nav-button.w--open) { overflow: hidden; }
+}
+/* on larger screens */
+@container (min-width: 65em) {
+	/* show desktop nav & dropdown backdrop */
+	.nav_desktop_wrap, .nav_dropdown_backdrop { display: block; }
+	/* hide mobile nav & mobile menu backdrop */
+	.nav_desktop_wrap:not(.w-condition-invisible) ~ .nav_mobile_wrap, .nav_desktop_wrap:not(.w-condition-invisible) ~ .nav_menu_backdrop { display: none; }
+}
+/* dropdown list: initial state */
+html:not(.wf-design-mode) .nav_dropdown_component > .w-dropdown-list {
+	/* removes display none to enable css transitions */
+	display: grid !important;
+	grid-template-columns: minmax(0, 1fr);
+	/* sets list to 0 height by default */
+	grid-template-rows: 0fr;
+	transition: grid-template-rows var(--nav--dropdown-close-duration);
+	/* makes list content not focusable when closed */
+	visibility: hidden;
+	opacity: 0;
+}
+/* makes list content focusable when opened */
+html:not(.wf-design-mode) .nav_dropdown_component > .w-dropdown-list.w--open {
+	visibility: visible;
+	opacity: 1;
+}
+/* sets list child to overflow hidden to enable css height transition */
+.nav_dropdown_component > .w-dropdown-list > * {
+	overflow: hidden;
+}
+/* set open state of dropdown list */
+.nav_dropdown_component:has(> .w-dropdown-toggle[aria-expanded="true"]) > .w-dropdown-list {
+	--nav--dropdown-close-duration: var(--nav--dropdown-open-duration);
+	grid-template-rows: 1fr;
+}
+/* on desktop, delay dropdown opening if another dropdown is open */
+.nav_desktop_wrap:has(.nav_dropdown_component > .w-dropdown-toggle.w--open[aria-expanded="false"]) .nav_dropdown_component:has(> .w--open[aria-expanded="true"]) > .w-dropdown-list {
+	transition-delay: var(--nav--dropdown-close-duration);
+}
+/* reveal dropdown backdrop when dropdown open */
+.nav_dropdown_backdrop {
+	transition: opacity var(--nav--dropdown-close-duration);
+}
+body:has(.nav_dropdown_component > [aria-expanded="true"]) .nav_dropdown_backdrop {
+	opacity: 1;
+}
+/* reveal mobile menu backdrop on menu open */
+.nav_menu_backdrop {
+	transition: opacity var(--nav--menu-close-duration);
+}
+.nav_component:has(.w-nav-button.w--open) .nav_menu_backdrop {
+	opacity: 1;
+}
+/* menu animations */
+@keyframes menuOpen {
+ from { clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
+ to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+@keyframes menuClose {
+ from { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+ to { clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
+}
+/* menu open */
+.nav_component:has(.w-nav-button.w--open) .w-nav-menu {
+	animation: menuOpen var(--nav--menu-open-duration) ease-in-out forwards;
+}
+/* menu close */
+.nav_component:has(.w-nav-button:not(.w--open)) .w-nav-menu {
+	animation: menuClose var(--nav--menu-close-duration) ease-in-out forwards;
+}
+/* position overflow to top of screen */
+.nav_component .w-nav-overlay {
+ top: 0;
+ min-height: 100vh;
+}
+/* open dropdown on mobile */
+.nav_mobile_wrap [data-open-on-mobile] > .w-dropdown-toggle {
+	display: none;
+}
+.nav_mobile_wrap [data-open-on-mobile] > .w-dropdown-list {
+	visibility: visible !important;
+	opacity: 1 !important;
+	display: block !important;
+	grid-template-rows: 1fr !important;
+}
+/* nav banner */
+html:has(.nav_banner_wrap:not(.w-condition-invisible)):not(.hide-nav-banner) {
+	--nav--height-total: calc(var(--nav--banner-height) + var(--nav--height) + var(--nav--spacing-outer-vertical));
+}
+.hide-nav-banner .nav_banner_wrap {
+	display: none;
+}
+.wf-design-mode .nav_mobile_menu_wrap {
+	width: 100%;
+}
+</style>
+      </div>
+      <a href="#main" class="nav_skip_wrap w-inline-block">
+        <div class="nav_skip_text u-text-style-small">Skip to main content</div>
+      </a>
+      <header class="nav_desktop_wrap">
+        <div class="nav_desktop_contain">
+          <div class="nav_desktop_layout">
+            <a href="#" aria-label="Powrót" class="nav_logo_link w-inline-block"><svg data-w-id="e863807f-f4c3-430c-9f51-9e058714aac3" xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 184 184" fill="none" class="nav_logo_svg">
+                <path d="M75.9236 161.592L84.8594 122.528L22.1583 75.9235L61.222 84.8594L107.82 22.1566L98.8837 61.2203L161.594 107.82L122.53 98.8837L75.9236 161.592Z" fill="currentColor"></path>
+              </svg>
+              <div class="logo_text">RIV.MARKETING</div>
+            </a>
+            <nav aria-label="Main" data-wf--menu--variant="desktop" class="nav_links_component w-variant-23049969-09ac-2789-520b-3c6ae895bbc6">
+              <ul role="list" class="nav_actions_wrap w-variant-23049969-09ac-2789-520b-3c6ae895bbc6 w-list-unstyled">
+                <li class="nav_buttons_item is-main w-variant-23049969-09ac-2789-520b-3c6ae895bbc6">
+                  <div data-wf--button-main--variant="secondary" data-modal-trigger="modal-2" class="button_main_wrap" data-button=" " data-trigger="hover focus">
+                    <div class="clickable_wrap u-cover-absolute">
+                      <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Kontakt</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Kontakt</span></button>
+                    </div>
+                    <div class="button_main_element w-variant-e85564cd-af30-a478-692b-71732aefb3ab">
+                      <div aria-hidden="true" class="button_main_text u-text-style-main">Kontakt</div>
+                      <div class="button_main_icon u-hide-if-empty"></div>
+                      <div class="button_main_line"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_mobile_wrap w-nav">
+        <div class="nav_mobile_contain">
+          <div class="nav_mobile_layout">
+            <a href="#" aria-label="Powrót" class="nav_logo_link w-inline-block"><svg data-w-id="937d3a45-4bfb-2e18-47a1-12429ad0d137" xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 184 184" fill="none" class="nav_logo_svg">
+                <path d="M75.9236 161.592L84.8594 122.528L22.1583 75.9235L61.222 84.8594L107.82 22.1566L98.8837 61.2203L161.594 107.82L122.53 98.8837L75.9236 161.592Z" fill="currentColor"></path>
+              </svg>
+              <div class="logo_text">RIV.MARKETING</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav_dropdown_backdrop"></div>
+      <div class="nav_menu_backdrop"></div>
+      <div class="u-embed-js w-embed w-script">
+        <script>
+if (sessionStorage.getItem("hide-nav-banner") === "true") {
+  document.documentElement.classList.add("hide-nav-banner");
+}
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".nav_banner_close_wrap").forEach((button) => {
+    button.addEventListener("click", function () {
+      sessionStorage.setItem("hide-nav-banner", "true");
+      document.documentElement.classList.add("hide-nav-banner");
+    });
+  });
+  document.querySelectorAll(".nav_skip_wrap").forEach(function (link) {
+    const target = document.querySelector("main");
+    if (!target) return;
+    link.addEventListener("click", function () {
+      target.setAttribute("tabindex", "-1");
+      target.focus();
+    });
+  });
+});
+</script>
+      </div>
+    </div>
+    <main id="main" class="page_main">
+      <div class="nav_bottom_wrap">
+        <div class="nav_bottom_contain u-container">
+          <div class="u-button-wrapper" style="">
+            <div class="u-display-contents">
+              <div data-wf--button---modal--variant="primary" data-modal-trigger="modal-1" class="button_main_wrap" data-button=" " data-trigger="hover focus">
+                <div class="clickable_wrap u-cover-absolute">
+                  <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Zobacz projekty</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Zobacz projekty</span></button>
+                </div>
+                <div data-project-button="container" data-toggle-button="" class="button_main_element">
+                  <div class="button_main_icon_logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="u-svg">
+                      <path d="M12.5963 31.7619L14.5955 23.0227L0.568042 12.5963L9.30731 14.5955L19.7321 0.567685L17.733 9.30696L31.7623 19.7321L23.0231 17.733L12.5963 31.7619Z" fill="currentColor"></path>
+                    </svg></div>
+                  <div data-default-text="Zamknij projekty" aria-hidden="true" data-project-button="" class="button_main_text u-text-style-main">Zobacz projekty</div>
+                  <div class="button_main_icon_plus u-hide-if-empty"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 800 800" fill="none" class="u-svg">
+                      <g clip-path="url(#clip0_2391_729)">
+                        <path d="M399.994 0C391.194 0 382.494 0.3 373.844 0.85L377.044 50.75C392.328 49.7622 407.66 49.7622 422.944 50.75L426.144 0.85C417.438 0.285561 408.717 0.0020806 399.994 0ZM321.994 7.6C304.694 11.05 287.794 15.6 271.394 21.1L287.444 68.5C301.794 63.6 316.544 59.65 331.644 56.65L321.994 7.65V7.6ZM528.594 21.15C512.059 15.5442 495.172 11.0344 478.044 7.65L468.344 56.65C483.444 59.65 498.194 63.65 512.544 68.5L528.594 21.15ZM622.244 67.4C607.732 57.6872 592.599 48.9352 576.944 41.2L554.794 86C568.544 92.8 581.794 100.5 594.444 108.95L622.244 67.4ZM222.994 41.2C207.294 48.95 192.194 57.7 177.744 67.4L205.544 108.9C218.252 100.418 231.496 92.7685 245.194 86L222.994 41.2ZM136.244 99.25C123.144 110.75 110.744 123.15 99.2437 136.25L136.844 169.25C146.944 157.75 157.744 146.95 169.244 136.85L136.244 99.25ZM700.744 136.25C689.225 123.128 676.866 110.769 663.744 99.25L630.744 136.85C642.244 146.95 653.094 157.75 663.144 169.25L700.744 136.25ZM758.794 223C751.059 207.36 742.307 192.244 732.594 177.75L691.094 205.55C699.544 218.2 707.194 231.45 713.994 245.2L758.794 223ZM67.3937 177.75C57.6937 192.2 48.8938 207.3 41.1938 223.05L85.9937 245.2C92.7937 231.45 100.494 218.2 108.944 205.55L67.3937 177.75ZM21.1438 271.4C15.5378 287.935 11.028 304.822 7.64375 321.95L56.6437 331.65C59.6437 316.55 63.6437 301.8 68.4937 287.45L21.1438 271.4ZM792.394 322C789.012 304.855 784.502 287.951 778.894 271.4L731.494 287.45C736.394 301.8 740.344 316.55 743.344 331.65L792.344 321.95L792.394 322ZM0.84375 373.85C-0.28125 391.265 -0.28125 408.735 0.84375 426.15L50.7437 422.95C49.756 407.666 49.756 392.334 50.7437 377.05L0.84375 373.85ZM799.994 400C799.992 391.276 799.709 382.555 799.144 373.85L749.244 377.05C750.232 392.334 750.232 407.666 749.244 422.95L799.144 426.15C799.709 417.445 799.992 408.724 799.994 400ZM7.59375 478C11.0437 495.3 15.5938 512.2 21.0938 528.6L68.4937 512.55C63.5761 498.093 59.6175 483.328 56.6437 468.35L7.64375 478.05L7.59375 478ZM778.844 528.6C784.444 512.2 788.944 495.3 792.344 478.05L743.344 468.35C740.344 483.45 736.344 498.2 731.494 512.55L778.844 528.6ZM41.1938 577C48.9308 592.639 57.6829 607.754 67.3937 622.25L108.894 594.45C100.403 581.747 92.7533 568.502 85.9937 554.8L41.1938 576.95V577ZM732.594 622.25C742.294 607.8 751.094 592.7 758.794 576.95L713.994 554.8C707.194 568.55 699.494 581.8 691.044 594.45L732.594 622.25ZM99.2437 663.75C110.744 676.85 123.144 689.25 136.244 700.75L169.244 663.15C157.752 653.064 146.929 642.242 136.844 630.75L99.2437 663.75ZM663.744 700.75C676.844 689.25 689.244 676.85 700.744 663.75L663.144 630.75C653.094 642.25 642.244 653.1 630.744 663.15L663.744 700.75ZM576.994 758.8C592.694 751.05 607.794 742.3 622.244 732.6L594.444 691.1C581.736 699.582 568.491 707.232 554.794 714L576.944 758.8H576.994ZM177.744 732.6C192.194 742.3 207.294 751.1 223.044 758.8L245.194 714C231.49 707.224 218.245 699.558 205.544 691.05L177.744 732.6ZM271.394 778.85C287.794 784.45 304.694 788.95 321.944 792.35L331.644 743.35C316.666 740.375 301.901 736.416 287.444 731.5L271.394 778.85ZM477.994 792.4C495.139 789.018 512.042 784.508 528.594 778.9L512.544 731.5C498.087 736.416 483.321 740.375 468.344 743.35L478.044 792.35L477.994 792.4ZM373.844 799.15C391.259 800.277 408.729 800.277 426.144 799.15L422.944 749.25C407.66 750.239 392.328 750.239 377.044 749.25L373.844 799.15ZM424.994 225C424.994 218.37 422.36 212.011 417.671 207.322C412.983 202.634 406.624 200 399.994 200C393.363 200 387.004 202.634 382.316 207.322C377.628 212.011 374.994 218.37 374.994 225V375H224.994C218.363 375 212.004 377.634 207.316 382.322C202.628 387.011 199.994 393.37 199.994 400C199.994 406.63 202.628 412.989 207.316 417.678C212.004 422.366 218.363 425 224.994 425H374.994V575C374.994 581.63 377.628 587.989 382.316 592.678C387.004 597.366 393.363 600 399.994 600C406.624 600 412.983 597.366 417.671 592.678C422.36 587.989 424.994 581.63 424.994 575V425H574.994C581.624 425 587.983 422.366 592.671 417.678C597.36 412.989 599.994 406.63 599.994 400C599.994 393.37 597.36 387.011 592.671 382.322C587.983 377.634 581.624 375 574.994 375H424.994V225Z" fill="currentColor"></path>
+                      </g>
+                    </svg></div>
+                  <div class="button_main_line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section data-wf--section--variant="inherit" class="u-section" style="">
+        <div data-wf--spacer--variant="page-top" class="u-section-spacer w-variant-e359d2da-de19-6775-b122-3e06f925f39e u-ignore-trim"></div>
+        <div class="u-container  ">
+          <div data-wf--layout--variant="stack" class="u-layout-wrapper" data-project-id="">
+            <div class="u-layout">
+              <div class="u-layout-column-1  ">
+                <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                  <p>Jestem Mateusz.</p>
+                  <p>Tworzę strony internetowe, które mają sens biznesowy.<br>Pomagam firmom poukładać przekaz, pokazać ofertę i zrobić dobre pierwsze wrażenie.</p>
+                </div>
+                <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                  <p>Pracuję sam i biorę pełną odpowiedzialność za projekt — od pomysłu po gotową stronę.<br>Mam ponad 4 lata doświadczenia i wiem, co na stronach działa, a co jest tylko ozdobą.</p>
+                </div>
+                <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                  <p>Dla mnie strona to narzędzie. Ma być czytelna, spójna i ułatwiać decyzję klientowi.<br>Bez chaosu, bez przerostu formy, bez zbędnych elementów.</p>
+                </div>
+                <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                  <p>Dobra strona to połączenie kilku warstw: designu, komunikacji, marketingu, technologii i interakcji. Wszystko musi ze sobą współgrać, inaczej strona przestaje spełniać swoją rolę.</p>
+                </div>
+                <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                  <p>Jeśli nie chcesz angażować zespołu w projekt strony i wolisz oddać to komuś, kto po prostu dowiezie temat — mogę w tym pomóc.</p>
+                </div>
+                <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                  <p>Zobacz moje projekty albo napisz, jeśli chcesz pogadać.</p>
+                </div>
+              </div>
+              <div class="u-layout-column-2  ">
+                <div class="u-button-wrapper" style="">
+                  <div class="u-display-contents">
+                    <div data-wf--button-main--variant="link" data-modal-trigger="modal-2" class="button_main_wrap w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400" data-button=" " data-trigger="hover focus">
+                      <div class="clickable_wrap u-cover-absolute">
+                        <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Kontakt</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Kontakt</span></button>
+                      </div>
+                      <div class="button_main_element w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400">
+                        <div aria-hidden="true" class="button_main_text u-text-style-main">Kontakt</div>
+                        <div class="button_main_icon u-hide-if-empty"></div>
+                        <div class="button_main_line w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-wf--layout--variant="stack" class="u-layout-wrapper u-margin-top-8" data-project-id="">
+            <div class="u-layout">
+              <div class="u-layout-column-1 u-padding-bottom-4">
+                <div class="riv-signature w-embed w-script"><svg id="signature-svg" width="current" height="current" viewbox="0 0 1442 273" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1317.77 264.021C1313.53 263.729 1310.74 262.996 1310.6 258.748C1310.6 256.844 1311.33 255.086 1311.91 253.621C1314.11 248.348 1318.21 243.367 1321.58 239.266C1330.81 228.133 1342.53 216.268 1353.22 206.16C1370.21 189.168 1371.39 188.729 1388.23 173.201C1396 157.967 1403.17 142.439 1410.06 126.619C1403.91 129.549 1397.46 132.625 1390.58 135.115C1387.5 136.434 1385.6 136.727 1382.67 136.873C1381.64 136.873 1379.88 135.994 1379.88 134.676C1379.88 134.09 1380.03 133.504 1380.18 133.211C1381.05 130.574 1382.81 128.963 1384.28 127.352C1388.38 122.664 1393.36 117.391 1400.1 116.512C1403.61 116.512 1406.25 119.441 1407.71 122.664C1408.01 123.104 1408.01 122.811 1408.01 123.396C1409.77 122.371 1411.52 121.346 1413.28 120.174C1413.72 120.174 1414.01 119.881 1414.45 119.881C1415.48 119.881 1416.65 121.053 1416.65 122.078C1416.65 122.371 1416.65 122.664 1416.5 122.957C1410.06 137.459 1403.32 151.814 1396.14 166.023C1409.91 153.572 1423.68 141.268 1437.6 128.963C1438.04 128.67 1438.48 128.523 1438.92 128.523C1440.09 128.523 1441.26 129.549 1441.26 130.721C1441.26 131.307 1440.97 131.893 1440.53 132.332C1440.53 132.332 1409.62 156.941 1393.51 171.297C1381.2 195.027 1366.11 222.127 1349.12 242.488C1344.14 248.348 1338.87 254.061 1332.42 258.455C1327.88 261.531 1323.19 264.021 1317.77 264.021ZM1382.67 134.822C1388.53 134.09 1397.61 129.402 1404.2 125.594C1403.61 125.008 1403.32 124.568 1403.32 123.543V123.104C1403.32 120.76 1401.86 118.709 1399.37 118.709C1391.75 118.709 1382.08 132.625 1382.08 134.676L1382.67 134.822ZM1317.48 261.824C1322.31 261.824 1326.56 259.627 1330.96 256.404C1336.82 252.01 1342.09 246.443 1346.78 240.584C1361.87 221.98 1374.02 200.447 1385.74 178.035C1369.48 191.951 1368.9 192.977 1353.96 206.893C1342.68 218.172 1333.01 227.693 1322.75 240.291C1318.95 244.979 1315.87 249.52 1313.67 254.354C1313.09 255.672 1312.5 257.137 1312.5 258.455C1312.79 260.506 1313.23 261.531 1315.87 261.678L1317.48 261.824Z" fill="black"></path>
+                    <path d="M1308.25 152.4H1307.52C1307.23 152.4 1306.93 152.4 1306.49 152.254C1305.62 151.668 1305.62 150.789 1305.62 150.35C1306.05 146.248 1308.11 143.611 1309.86 140.242C1313.09 134.822 1316.46 129.549 1319.82 124.129C1320.12 123.543 1320.85 123.104 1321.58 123.104C1322.75 123.104 1323.93 124.129 1323.93 125.447L1323.63 126.619L1323.34 126.766C1319.38 131.16 1315.14 136.873 1312.06 141.561C1310.16 144.344 1307.37 148.445 1307.37 150.496V150.789H1307.81C1308.11 150.643 1308.54 150.496 1308.84 150.496C1310.16 149.91 1311.47 149.031 1312.79 148.152C1322.61 141.707 1331.98 132.625 1341.8 124.568C1349.41 118.123 1345.31 121.053 1352.78 115.633C1354.1 115.047 1353.37 115.193 1355.13 114.754C1355.71 114.754 1355.86 115.047 1356.15 116.072C1356.01 117.098 1356.01 117.391 1355.71 118.123C1353.22 124.715 1348.97 130.135 1348.97 134.383C1349.12 136.873 1350.88 137.752 1353.96 137.752C1363.33 137.166 1372.71 133.064 1381.49 128.67L1382.37 128.377C1383.98 128.377 1384.28 129.256 1384.72 130.721C1384.72 131.746 1383.25 132.771 1383.25 132.771C1374.9 135.848 1365.53 139.656 1355.57 140.096C1353.96 140.096 1352.2 140.096 1350.44 139.51C1347.51 138.045 1347.07 137.166 1346.92 134.529C1346.92 131.453 1348.68 128.377 1350.15 125.887C1351.9 122.811 1353.66 120.174 1354.69 116.658V116.219C1350.59 118.27 1346.78 121.785 1342.53 125.301C1328.61 137.166 1335.21 131.6 1321 143.465C1318.51 145.516 1316.16 147.566 1313.53 149.324C1312.35 150.35 1311.04 151.229 1309.42 151.961L1308.25 152.4Z" fill="black"></path>
+                    <path d="M1283.94 152.107C1280.42 152.107 1277.78 150.789 1276.32 147.127C1275.15 144.344 1275 141.414 1275 138.631C1275 135.701 1275.29 133.064 1275.73 130.135C1276.03 129.109 1277.05 128.23 1278.08 128.23C1279.39 128.23 1280.27 129.402 1280.27 130.574L1280.13 131.307C1278.22 135.701 1278.08 137.752 1277.78 142.439C1277.78 145.076 1278.37 147.566 1280.27 149.178C1281.15 149.91 1282.32 150.203 1283.5 150.35C1290.23 150.35 1298.29 144.783 1304.3 139.949C1308.54 136.727 1312.5 132.918 1316.31 129.109C1316.75 128.523 1317.33 128.377 1317.92 128.377C1319.09 128.377 1320.12 129.402 1320.12 130.721C1320.12 131.453 1319.82 131.746 1319.09 132.479C1310.74 138.338 1301.37 145.955 1291.55 150.203C1289.21 151.229 1286.72 152.107 1283.94 152.107ZM1284.96 117.098C1283.79 117.098 1282.76 116.072 1282.76 114.9C1282.76 113.729 1283.79 112.703 1284.96 112.703C1286.43 112.703 1286.87 112.117 1286.87 111.971C1287.16 111.092 1287.89 110.506 1288.92 110.506C1290.38 110.799 1291.26 111.238 1291.26 112.85C1290.97 114.607 1289.65 117.098 1284.96 117.098Z" fill="black"></path>
+                    <path d="M1211.57 212.459C1210.25 212.459 1209.38 211.434 1209.38 210.262C1209.38 209.822 1209.52 209.383 1209.67 209.09C1230.03 176.717 1250.24 141.414 1269.14 108.016C1291.41 69.1973 1288.62 74.7637 1311.91 32.7227C1282.03 35.0664 1247.75 38.582 1218.75 43.2695H1218.31C1217.14 43.2695 1216.26 42.3906 1216.11 41.0723C1216.11 40.0469 1216.85 39.0215 1218.02 38.875C1248.34 34.4805 1283.5 31.5508 1313.53 29.793C1318.07 21.8828 1322.46 13.9727 1326.86 6.0625C1327.29 5.33008 1328.17 4.89062 1328.91 4.89062C1330.37 5.33008 1331.1 5.62305 1331.1 7.23438L1330.81 8.25977L1318.07 29.6465C1345.61 28.1816 1357.18 28.0352 1384.42 27.5957C1394.82 27.5957 1405.37 27.8887 1415.77 28.0352C1416.06 28.0352 1416.21 28.1816 1416.21 28.4746C1416.21 28.7676 1416.06 29.0605 1415.77 29.0605C1383.84 29.0605 1351.32 29.6465 1316.89 32.4297H1316.31C1277.34 98.3477 1277.49 97.4688 1241.89 160.018C1233.54 174.666 1225.2 189.461 1217.29 204.402L1218.02 204.256C1219.48 204.256 1219.92 204.842 1220.21 206.307C1220.21 207.186 1219.78 207.918 1219.04 208.357L1212.74 212.166C1212.3 212.166 1212.01 212.459 1211.57 212.459Z" fill="black"></path>
+                    <path d="M1207.76 149.764C1207.03 149.764 1206.3 149.617 1205.42 149.471C1204.69 149.324 1203.66 148.885 1202.93 148.006C1202.34 147.273 1202.2 146.395 1202.2 145.809C1202.49 142.439 1203.96 141.268 1205.42 139.07C1211.72 131.014 1220.36 122.664 1229.74 117.83C1231.93 116.365 1233.4 115.779 1236.47 115.779C1237.06 116.072 1237.65 116.805 1237.65 117.391C1236.91 120.76 1234.42 121.785 1231.93 124.422C1228.71 127.205 1225.49 129.695 1221.68 131.014C1220.8 131.307 1219.92 131.6 1219.19 131.6C1218.46 131.6 1216.99 131.307 1216.99 130.721C1217.14 130.428 1217.29 130.281 1217.58 130.281L1218.9 130.428C1225.05 130.428 1233.98 121.346 1236.04 117.391C1234.42 117.391 1232.67 118.416 1230.62 119.441C1221.83 124.275 1213.92 132.625 1207.62 140.682C1206.3 142.732 1205.13 144.637 1205.13 145.809C1205.13 146.395 1205.57 146.688 1207.76 146.688C1208.94 146.688 1210.25 146.395 1211.43 146.248C1216.55 145.223 1221.53 143.318 1226.51 141.561C1236.33 137.752 1246.14 133.357 1255.66 128.67L1256.4 128.523C1258.15 128.523 1258.45 129.256 1258.74 130.721C1258.74 131.6 1258.3 132.332 1257.57 132.771C1247.75 137.166 1237.79 141.268 1227.69 144.93C1222.56 146.688 1217.43 148.299 1212.01 149.324C1210.69 149.471 1209.23 149.764 1207.76 149.764Z" fill="black"></path>
+                    <path d="M1143.31 157.967C1141.55 157.527 1141.11 156.941 1140.82 155.77C1140.82 151.668 1141.7 149.617 1143.16 146.395C1147.12 136.434 1152.39 126.766 1156.93 118.416C1176.12 82.9668 1200.15 44.1484 1220.8 11.6289C1221.24 10.8965 1221.97 10.6035 1222.71 10.6035C1224.02 10.6035 1224.9 11.6289 1224.9 12.8008C1224.9 13.3867 1224.61 13.6797 1224.61 14.1191C1202.93 47.6641 1180.08 83.9922 1159.57 119.881C1154.74 128.523 1149.32 138.338 1145.51 147.273C1144.34 150.643 1143.31 152.4 1143.31 155.477C1144.92 155.477 1148.44 152.547 1150.78 150.789C1155.47 146.834 1156.79 145.369 1161.33 141.414C1161.77 140.242 1162.35 139.217 1163.09 138.338C1166.46 134.236 1170.7 131.6 1175.1 129.256C1181.1 124.129 1185.64 120.32 1192.97 116.219L1194.14 115.926C1194.87 116.072 1195.31 116.658 1195.31 116.951C1195.02 118.123 1194.58 118.123 1194.14 118.855C1187.26 125.74 1178.91 128.963 1172.61 133.357C1172.17 133.797 1171.58 134.09 1171.14 134.383C1167.04 138.045 1168.65 135.994 1165.14 139.949C1164.4 140.975 1163.67 142.293 1163.67 143.318C1163.82 145.516 1166.31 145.955 1169.24 145.955C1171.44 145.955 1173.78 145.516 1175.98 145.076C1188.28 142.586 1201.9 135.555 1213.18 128.816C1213.48 128.67 1213.92 128.523 1214.36 128.523C1215.97 128.523 1216.11 129.109 1216.55 130.721C1216.55 131.6 1216.26 132.625 1215.38 132.625C1203.08 139.363 1190.04 145.516 1176.56 148.152C1174.37 148.592 1172.17 148.885 1169.82 148.885C1166.02 148.885 1160.89 147.859 1160.89 143.318C1160.45 143.904 1159.86 144.344 1159.28 144.783C1155.47 148.299 1152.25 152.254 1148 155.623C1146.83 156.502 1145.8 156.795 1144.34 157.82L1143.31 157.967ZM1185.35 123.25L1189.31 120.467C1187.84 121.346 1186.52 122.225 1185.35 123.25Z" fill="black"></path>
+                    <path d="M1121.04 160.018C1120.17 160.018 1118.85 159.139 1118.55 158.26C1118.26 157.527 1118.26 156.941 1118.26 156.355C1118.26 155.477 1118.41 154.598 1118.55 153.719C1121.19 141.854 1125.15 138.338 1127.05 126.912C1126.9 126.473 1127.05 126.619 1126.76 126.326C1122.51 128.377 1122.07 130.281 1116.21 132.918C1115.33 133.357 1114.75 133.504 1113.57 133.504C1112.84 133.504 1111.96 133.504 1111.52 132.625C1111.08 132.918 1110.64 133.064 1110.06 133.064C1109.03 133.064 1107.86 132.186 1107.86 130.867C1107.86 130.281 1108.15 129.695 1108.74 129.256C1108.74 129.109 1108.89 128.963 1109.03 128.963L1110.94 127.791C1111.52 125.301 1112.99 122.811 1114.75 121.053C1115.77 120.174 1117.09 119.148 1119.14 119.148C1120.02 119.148 1121.19 119.295 1121.63 121.199C1120.75 124.715 1119.14 125.594 1117.53 127.205C1116.06 128.816 1114.45 130.135 1112.7 131.6C1112.99 131.746 1113.28 131.893 1113.72 131.893C1115.33 131.893 1117.53 130.721 1118.99 129.695L1122.07 127.498C1123.39 126.473 1124.85 124.861 1126.61 124.861C1128.08 124.861 1128.66 126.033 1128.66 127.059C1126.9 137.459 1122.22 144.637 1120.61 154.158C1120.46 154.744 1120.46 155.33 1120.46 155.916C1120.46 156.648 1120.46 157.088 1120.75 157.674H1121.04C1126.17 157.674 1141.55 139.949 1149.76 130.281C1150.2 129.842 1150.78 129.549 1151.51 129.549C1152.54 129.549 1153.71 130.281 1153.71 131.746C1153.71 132.186 1153.56 132.771 1153.12 133.211C1145.65 140.682 1138.62 147.859 1130.13 154.891C1127.64 156.941 1125.15 159.285 1121.04 160.018ZM1119.29 121.785L1119.14 121.639V121.785H1119.29ZM1113.72 125.887C1115.48 124.715 1117.53 123.25 1118.7 121.639C1117.97 121.639 1117.09 122.078 1116.21 122.811C1115.33 123.543 1114.6 124.422 1114.01 125.447L1113.72 125.887Z" fill="black"></path>
+                    <path d="M1051.17 142.439C1050.15 142.293 1049.71 142.293 1049.41 141.268C1049.41 139.949 1049.85 139.363 1050.29 138.631C1051.03 137.312 1051.9 135.994 1052.78 134.822C1056.3 129.842 1059.96 125.154 1064.79 121.053C1066.7 119.441 1067.58 118.709 1070.65 118.123C1073.73 118.123 1075.05 121.492 1075.49 124.129C1076.37 124.422 1076.51 124.861 1076.81 126.033C1076.66 127.205 1076.51 127.938 1076.51 129.256C1076.51 134.09 1079.15 138.338 1083.4 139.363C1084.42 139.51 1085.3 139.51 1086.18 139.51C1091.16 139.51 1095.85 137.605 1099.66 135.408C1103.03 133.504 1106.25 131.307 1109.33 128.816C1109.77 128.523 1110.21 128.377 1110.64 128.377C1111.96 128.377 1112.99 129.549 1112.99 130.574C1112.99 131.6 1112.55 132.039 1111.67 132.625C1101.71 137.312 1096.73 140.828 1086.47 141.268C1083.4 141.268 1080.18 140.242 1077.54 137.898C1076.07 136.434 1075.05 134.676 1074.17 132.918L1073.44 133.064C1071.97 132.918 1070.95 132.186 1070.95 130.574H1071.09C1064.5 134.09 1059.52 139.51 1052.49 142.146C1052.2 142.293 1051.76 142.439 1051.17 142.439ZM1051.17 140.828C1054.54 140.242 1056.88 138.045 1059.67 136.287C1063.92 133.504 1068.31 130.574 1071.68 126.619L1071.83 125.008C1071.83 122.664 1071.24 121.492 1070.36 121.492C1069.04 121.639 1067.87 122.078 1066.55 123.25C1062.01 126.619 1057.91 131.307 1054.25 135.848C1053.08 137.312 1051.17 139.656 1051.17 140.828Z" fill="black"></path>
+                    <path d="M720.117 263.289C718.799 263.289 717.773 262.264 717.773 261.092C717.773 260.652 717.92 260.066 718.213 259.627H718.359C751.758 218.318 784.424 176.277 815.918 133.357C826.318 108.162 829.98 98.6406 842.139 74.0312C848.73 60.9941 855.469 48.1035 863.086 35.5059C868.359 26.5703 874.365 16.1699 882.715 8.99219C884.912 7.38086 886.084 6.35547 889.014 6.0625C891.797 6.0625 893.262 8.69922 893.262 11.1895C893.262 14.4121 892.09 17.6348 891.064 20.2715C887.109 30.5254 881.104 40.7793 875.83 49.4219C859.277 76.5215 837.891 107.43 817.529 135.262C809.473 155.477 802.295 176.131 796.436 197.078C792.627 210.555 789.258 226.229 788.965 239.852C788.965 246.883 789.551 255.818 795.117 258.895C796.582 259.92 798.34 260.213 800.098 260.213C805.078 260.213 810.498 257.576 814.893 255.086C826.904 247.762 838.623 236.922 848.584 227.4C858.984 217 868.799 206.453 878.613 195.467C917.139 151.668 955.518 107.723 993.896 63.6309C1003.42 52.498 1013.23 41.5117 1023.05 30.8184C1028.03 25.3984 1032.86 20.125 1038.28 14.998C1041.36 11.9219 1045.02 7.9668 1048.97 6.0625C1049.85 5.47656 1050.59 5.03711 1051.9 5.03711C1054.69 5.33008 1054.83 5.47656 1055.13 9.13867C1054.39 14.4121 1052.34 18.6602 1050.59 22.6152C1046.34 32.5762 1040.77 42.9766 1036.08 52.2051C1016.02 90.291 1016.31 89.2656 994.336 129.256C980.42 154.891 966.211 180.525 953.906 206.893C947.021 221.541 940.576 235.457 939.404 247.762C939.844 250.105 939.844 249.812 940.43 249.959C945.996 249.959 959.619 236.922 968.115 228.719C997.559 198.836 1028.47 161.629 1054.1 129.695C1054.54 129.256 1055.13 128.963 1055.71 128.963C1057.03 128.963 1058.06 129.988 1058.06 131.16C1058.06 131.6 1057.91 132.186 1057.62 132.479C1039.31 155.33 1020.56 177.889 1001.22 199.715C991.553 210.848 981.738 221.541 971.191 231.795C966.064 237.068 960.645 242.195 954.785 246.736C949.512 250.838 947.021 253.768 940.283 254.354C935.889 254.354 935.01 249.373 935.01 246.883C935.596 239.266 938.525 231.941 941.016 225.203C953.906 193.416 974.707 157.088 990.82 127.352L1012.06 89.1191C1022.02 70.8086 1033.45 50.0078 1042.82 31.1113C1045.75 24.5195 1049.12 17.9277 1051.17 11.1895C1051.61 10.3105 1051.76 9.13867 1051.76 8.40625C1047.36 10.3105 1044.14 13.8262 1040.48 17.3418C1025.24 31.6973 1009.13 49.7148 995.361 64.9492C956.104 108.162 918.018 152.547 879.639 196.346C865.283 212.459 850.342 228.719 833.496 243.367C825.439 250.105 816.064 257.723 805.664 260.945C803.906 261.385 802.002 261.824 799.951 261.824C798.047 261.824 795.996 261.385 794.238 260.359C787.5 256.404 787.207 246.883 787.207 239.852C787.207 225.936 791.016 210.262 794.531 196.639C799.658 178.035 805.811 160.018 812.549 142C784.424 181.111 750.879 224.91 721.875 262.41C721.436 262.996 720.703 263.289 720.117 263.289ZM821.191 126.326C843.164 96.4434 867.92 62.6055 885.205 29.6465C887.842 24.2266 891.797 17.3418 891.797 10.8965C891.504 8.99219 891.064 7.52734 889.014 7.52734C884.326 8.40625 880.664 13.0938 876.709 18.2207C872.168 23.9336 868.213 30.2324 864.697 36.5312C849.902 61.5801 837.451 88.0938 825.879 114.754L821.191 126.326Z" fill="black"></path>
+                    <path d="M419.824 261.092H418.945C418.652 261.092 418.652 260.945 418.066 260.359C417.773 259.92 417.773 259.92 417.773 259.334C417.773 258.162 418.213 257.576 418.506 256.844C420.703 252.303 421.289 252.156 424.219 248.055C427.588 230.77 427.881 221.834 429.199 203.23C431.25 164.998 431.543 124.275 431.543 88.0938C431.396 62.6055 431.25 36.9707 430.664 11.3359C430.664 10.0176 431.689 9.28516 433.154 9.13867C434.18 9.13867 435.059 10.1641 435.205 11.3359L435.352 39.9004C435.352 81.6484 434.766 123.25 433.301 164.998C432.568 189.314 431.25 217.439 427.734 241.756L427.148 244.1C450.293 214.949 478.857 184.334 503.32 158.699C536.865 123.396 576.855 83.6992 613.77 51.7656C628.418 39.0215 650.391 20.2715 668.115 11.9219C671.484 10.457 674.414 9.43164 678.369 9.13867C679.834 9.13867 680.42 10.1641 680.566 11.4824C680.566 12.8008 679.541 13.5332 678.369 13.5332C672.949 13.5332 666.504 16.9023 661.377 19.6855C645.264 28.6211 629.004 41.6582 615.088 53.2305C561.914 98.2012 499.512 162.654 452.783 216.414C442.09 228.572 435.498 236.629 426.27 248.494C425.83 250.984 425.098 253.621 424.219 255.965C423.486 257.576 422.754 260.359 419.824 261.092ZM419.824 259.041C421.436 258.309 422.021 256.111 422.9 253.328C421.582 255.232 420.264 257.43 419.824 259.041Z" fill="black"></path>
+                    <path d="M308.643 263.436C307.471 263.436 306.445 262.41 306.445 261.385C306.445 260.652 306.738 259.92 307.324 259.48C345.117 190.633 385.986 117.537 424.512 55.5742L409.131 70.5156C408.691 70.9551 408.105 71.248 407.52 71.248C406.201 71.248 405.322 70.0762 405.322 68.9043C405.322 68.1719 405.469 67.5859 406.201 67.1465C416.455 58.7969 420.703 55.5742 429.785 46.9316C437.256 35.5059 444.141 24.373 452.783 13.2402C456.445 8.55273 461.133 0.789062 467.285 0.789062C467.871 0.935547 468.604 1.08203 469.189 1.66797C469.775 2.25391 470.068 3.13281 470.068 3.71875C470.068 5.18359 469.629 6.20898 469.189 7.23438C467.139 11.043 464.502 14.2656 461.719 17.4883C456.445 23.7871 450.586 29.793 444.727 35.7988L430.518 49.7148C391.406 111.971 352.002 185.066 315.674 253.475L316.406 253.328C317.578 253.328 318.604 254.354 318.604 255.379C318.604 256.111 318.164 256.844 317.578 257.43C312.305 261.238 314.795 259.041 309.961 262.996C309.521 263.289 309.082 263.436 308.643 263.436ZM435.645 41.6582C446.191 31.4043 451.025 27.5957 460.4 16.3164C463.037 13.0938 465.674 9.87109 467.432 6.35547C467.871 5.47656 468.164 4.59766 468.164 3.86523C468.164 2.98633 467.725 2.69336 466.553 2.69336C465.234 2.69336 463.77 4.01172 462.305 5.18359C456.885 10.3105 451.611 17.6348 447.07 24.373C443.262 30.0859 439.307 35.9453 435.645 41.6582Z" fill="black"></path>
+                    <path d="M152.344 272.078C145.752 272.078 139.16 270.76 133.301 267.537C116.162 257.869 112.646 236.482 106.641 218.465C102.539 208.797 100.488 202.498 94.3359 194.002C82.4707 213.045 68.7012 233.26 53.3203 247.762C45.1172 255.379 35.0098 263.436 22.8516 263.582C5.41992 263.582 0 245.564 0 230.477C0 198.104 16.8457 161.922 34.2773 136.287C66.5039 87.6543 113.818 51.3262 169.043 31.4043C171.973 24.0801 174.756 16.7559 177.539 9.43164C177.832 8.55273 178.711 7.9668 179.59 7.9668C181.201 8.25977 181.934 8.8457 181.934 10.1641L181.787 10.8965L174.316 29.6465L175.342 29.207C209.326 17.7812 243.164 13.5332 277.734 13.5332C294.727 13.5332 314.648 14.1191 331.201 19.3926C339.844 22.1758 348.779 27.4492 348.779 36.2383C348.779 42.8301 344.385 49.2754 340.576 53.9629C335.742 59.8223 330.176 65.0957 324.316 69.7832C312.744 79.4512 300.293 87.8008 287.402 95.8574C239.062 126.033 179.443 154.598 126.562 176.717C117.188 180.672 107.666 184.48 97.998 187.85L95.6543 191.658C100.342 197.811 104.15 205.135 107.08 212.312C114.99 231.502 116.455 254.646 134.912 264.754C140.039 267.537 145.898 268.709 151.904 268.709C168.018 267.977 182.08 262.264 197.021 253.475C221.484 239.412 246.973 217.732 266.602 197.664C267.334 197.664 267.627 196.932 268.213 196.932C269.385 196.932 270.557 198.104 270.557 199.275C270.557 199.861 269.971 200.154 269.971 200.74C246.24 224.617 211.377 253.621 178.271 266.512C171.094 269.295 163.77 271.346 156.006 271.932L152.344 272.078ZM94.3359 189.9L94.7754 189.021L93.8965 189.314L94.3359 189.9ZM22.1191 262.264C34.1309 261.678 43.0664 255.232 52.1484 246.59C67.9688 231.502 81.1523 211.727 93.0176 192.244L91.2598 190.193C81.0059 193.709 80.4199 194.881 69.5801 195.32C64.7461 195.32 58.5938 193.416 58.5938 188.289C59.0332 181.111 66.0645 177.449 72.8027 177.303C80.4199 177.303 87.7441 182.43 92.4316 187.557L96.3867 186.092C124.219 138.045 145.312 91.3164 168.75 32.4297C114.258 52.6445 68.1152 86.6289 35.0098 136.727C18.6035 161.336 1.17188 198.104 1.17188 229.744C1.17188 241.17 3.80859 254.793 13.1836 259.773C15.9668 261.385 19.043 262.264 22.1191 262.264ZM69.7266 192.977C77.3438 192.977 83.9355 190.193 89.7949 188.436C85.4004 183.895 79.248 179.793 72.9492 179.793C69.873 179.793 70.0195 180.086 67.2363 180.672C64.1602 182.137 61.084 184.334 60.9375 188.143C60.9375 191.658 65.4785 192.977 69.7266 192.977ZM99.7559 184.92C135.645 171.883 175.195 153.865 207.861 137.898C234.814 124.715 261.328 110.652 286.963 94.832C299.561 86.7754 312.012 78.4258 323.584 68.7578C331.641 62.3125 341.455 53.8164 345.703 44.002C346.729 41.5117 347.607 38.875 347.607 36.2383C347.607 27.8887 339.404 23.2012 330.908 20.418C314.502 14.998 294.58 14.5586 277.734 14.5586C243.018 14.5586 209.18 18.8066 175.635 29.9395L173.877 30.6719C154.395 78.4258 128.027 136.434 99.7559 184.92Z" fill="black"></path>
+                  </svg>
+                  <!--  2) CSS: wymusza brak wypełnienia i definiuje wygląd kreski  -->
+                  <style>
+  #signature-svg path {
+    fill: none !important;
+    stroke: #000;
+    stroke-width: 2;
+  }
+</style>
+                  <!--  3) JS: resetujemy na load, a animujemy dopiero przy scrollu wejścia w viewport  -->
+                  <script>
+window.addEventListener('load', () => {
+  const svg   = document.getElementById('signature-svg');
+  const paths = Array.from(svg.querySelectorAll('path'))
+                     .sort((a, b) => a.getBBox().x - b.getBBox().x);
+  const duration    = 0.5;   // czas rysowania jednej literki (s)
+  const letterDelay = 0.2;   // odstęp między literami (s)
+  // RESET: ukryj wszystkie kreski bez transition
+  paths.forEach(p => {
+    const L = p.getTotalLength();
+    p.style.transition       = 'none';
+    p.style.strokeDasharray  = L;
+    p.style.strokeDashoffset = L;
+  });
+  // wymuś reflow
+  svg.getBoundingClientRect();
+  // skonfiguruj transition + delay, ale jeszcze nie rysuj
+  paths.forEach((p, i) => {
+    p.style.transition = 
+      `stroke-dashoffset ${duration}s ease-in-out ${i * letterDelay}s`;
+  });
+  // funkcja wywołująca animację
+  function animate() {
+    paths.forEach(p => p.style.strokeDashoffset = 0);
+  }
+  // scroll listener, animujemy tylko, gdy ścieżka wejdzie w widok
+  function onScroll() {
+    const rect = svg.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      animate();
+      window.removeEventListener('scroll', onScroll);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+});
+</script>
+                </div>
+              </div>
+              <div class="u-layout-column-2  "></div>
+            </div>
+          </div>
+        </div>
+        <div data-wf--spacer--variant="small" class="u-section-spacer w-variant-d422cbd0-f212-c815-68df-63414354c21d u-ignore-trim"></div>
+        <div class="u-background-slot"></div>
+      </section>
+      <dialog data-wf--modal--variant="full-screen" data-modal-target="modal-1" data-show-in-designer="false" class="modal_dialog w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+        <div class="u-embed-css w-embed">
+          <style>
+.modal_dialog::backdrop { opacity: 0; }
+.wf-design-mode [data-show-in-designer="true"] {
+	display: block;
+}
+</style>
+        </div>
+        <div class="modal_inner w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+          <div data-modal-close="" class="modal_backdrop"></div>
+          <div class="modal_content w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+            <div data-lenis-prevent=" " data-modal-scroll="" class="modal_scroll w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+              <div class="modal_close w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+                <div data-wf--button-close--variant="secondary-medium" data-modal-close=" " class="button_close_wrap" autofocus=" " data-button=" " data-trigger="hover focus">
+                  <div class="button_close_element w-variant-c144d67f-2c62-4dbf-0fd8-0b6056b717ec">
+                    <div aria-hidden="true" class="button_close_icon w-variant-c144d67f-2c62-4dbf-0fd8-0b6056b717ec"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 800 800" fill="none" class="u-svg">
+                        <g clip-path="url(#clip0_2391_729)">
+                          <path d="M399.994 0C391.194 0 382.494 0.3 373.844 0.85L377.044 50.75C392.328 49.7622 407.66 49.7622 422.944 50.75L426.144 0.85C417.438 0.285561 408.717 0.0020806 399.994 0ZM321.994 7.6C304.694 11.05 287.794 15.6 271.394 21.1L287.444 68.5C301.794 63.6 316.544 59.65 331.644 56.65L321.994 7.65V7.6ZM528.594 21.15C512.059 15.5442 495.172 11.0344 478.044 7.65L468.344 56.65C483.444 59.65 498.194 63.65 512.544 68.5L528.594 21.15ZM622.244 67.4C607.732 57.6872 592.599 48.9352 576.944 41.2L554.794 86C568.544 92.8 581.794 100.5 594.444 108.95L622.244 67.4ZM222.994 41.2C207.294 48.95 192.194 57.7 177.744 67.4L205.544 108.9C218.252 100.418 231.496 92.7685 245.194 86L222.994 41.2ZM136.244 99.25C123.144 110.75 110.744 123.15 99.2437 136.25L136.844 169.25C146.944 157.75 157.744 146.95 169.244 136.85L136.244 99.25ZM700.744 136.25C689.225 123.128 676.866 110.769 663.744 99.25L630.744 136.85C642.244 146.95 653.094 157.75 663.144 169.25L700.744 136.25ZM758.794 223C751.059 207.36 742.307 192.244 732.594 177.75L691.094 205.55C699.544 218.2 707.194 231.45 713.994 245.2L758.794 223ZM67.3937 177.75C57.6937 192.2 48.8938 207.3 41.1938 223.05L85.9937 245.2C92.7937 231.45 100.494 218.2 108.944 205.55L67.3937 177.75ZM21.1438 271.4C15.5378 287.935 11.028 304.822 7.64375 321.95L56.6437 331.65C59.6437 316.55 63.6437 301.8 68.4937 287.45L21.1438 271.4ZM792.394 322C789.012 304.855 784.502 287.951 778.894 271.4L731.494 287.45C736.394 301.8 740.344 316.55 743.344 331.65L792.344 321.95L792.394 322ZM0.84375 373.85C-0.28125 391.265 -0.28125 408.735 0.84375 426.15L50.7437 422.95C49.756 407.666 49.756 392.334 50.7437 377.05L0.84375 373.85ZM799.994 400C799.992 391.276 799.709 382.555 799.144 373.85L749.244 377.05C750.232 392.334 750.232 407.666 749.244 422.95L799.144 426.15C799.709 417.445 799.992 408.724 799.994 400ZM7.59375 478C11.0437 495.3 15.5938 512.2 21.0938 528.6L68.4937 512.55C63.5761 498.093 59.6175 483.328 56.6437 468.35L7.64375 478.05L7.59375 478ZM778.844 528.6C784.444 512.2 788.944 495.3 792.344 478.05L743.344 468.35C740.344 483.45 736.344 498.2 731.494 512.55L778.844 528.6ZM41.1938 577C48.9308 592.639 57.6829 607.754 67.3937 622.25L108.894 594.45C100.403 581.747 92.7533 568.502 85.9937 554.8L41.1938 576.95V577ZM732.594 622.25C742.294 607.8 751.094 592.7 758.794 576.95L713.994 554.8C707.194 568.55 699.494 581.8 691.044 594.45L732.594 622.25ZM99.2437 663.75C110.744 676.85 123.144 689.25 136.244 700.75L169.244 663.15C157.752 653.064 146.929 642.242 136.844 630.75L99.2437 663.75ZM663.744 700.75C676.844 689.25 689.244 676.85 700.744 663.75L663.144 630.75C653.094 642.25 642.244 653.1 630.744 663.15L663.744 700.75ZM576.994 758.8C592.694 751.05 607.794 742.3 622.244 732.6L594.444 691.1C581.736 699.582 568.491 707.232 554.794 714L576.944 758.8H576.994ZM177.744 732.6C192.194 742.3 207.294 751.1 223.044 758.8L245.194 714C231.49 707.224 218.245 699.558 205.544 691.05L177.744 732.6ZM271.394 778.85C287.794 784.45 304.694 788.95 321.944 792.35L331.644 743.35C316.666 740.375 301.901 736.416 287.444 731.5L271.394 778.85ZM477.994 792.4C495.139 789.018 512.042 784.508 528.594 778.9L512.544 731.5C498.087 736.416 483.321 740.375 468.344 743.35L478.044 792.35L477.994 792.4ZM373.844 799.15C391.259 800.277 408.729 800.277 426.144 799.15L422.944 749.25C407.66 750.239 392.328 750.239 377.044 749.25L373.844 799.15ZM424.994 225C424.994 218.37 422.36 212.011 417.671 207.322C412.983 202.634 406.624 200 399.994 200C393.363 200 387.004 202.634 382.316 207.322C377.628 212.011 374.994 218.37 374.994 225V375H224.994C218.363 375 212.004 377.634 207.316 382.322C202.628 387.011 199.994 393.37 199.994 400C199.994 406.63 202.628 412.989 207.316 417.678C212.004 422.366 218.363 425 224.994 425H374.994V575C374.994 581.63 377.628 587.989 382.316 592.678C387.004 597.366 393.363 600 399.994 600C406.624 600 412.983 597.366 417.671 592.678C422.36 587.989 424.994 581.63 424.994 575V425H574.994C581.624 425 587.983 422.366 592.671 417.678C597.36 412.989 599.994 406.63 599.994 400C599.994 393.37 597.36 387.011 592.671 382.322C587.983 377.634 581.624 375 574.994 375H424.994V225Z" fill="currentColor"></path>
+                        </g>
+                      </svg></div>
+                  </div>
+                  <div class="clickable_wrap u-cover-absolute">
+                    <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Close</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Close</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_slot w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="matimar">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/mockup-riv-marketing-3.webp" loading="lazy" alt="" sizes="100vw" srcset="images/mockup-riv-marketing-3-p-500.webp 500w, images/mockup-riv-marketing-3-p-800.webp 800w, images/mockup-riv-marketing-3-p-1080.webp 1080w, images/mockup-riv-marketing-3-p-1600.webp 1600w, images/mockup-riv-marketing-3.webp 1920w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/mockup-riv-marketing-4.webp" loading="lazy" alt="" sizes="100vw" srcset="images/mockup-riv-marketing-4-p-500.webp 500w, images/mockup-riv-marketing-4-p-800.webp 800w, images/mockup-riv-marketing-4-p-1080.webp 1080w, images/mockup-riv-marketing-4-p-1600.webp 1600w, images/mockup-riv-marketing-4-p-2000.webp 2000w, images/mockup-riv-marketing-4.webp 2048w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/mockup-riv-marketing-5.webp" loading="lazy" alt="" sizes="100vw" srcset="images/mockup-riv-marketing-5-p-500.webp 500w, images/mockup-riv-marketing-5-p-800.webp 800w, images/mockup-riv-marketing-5-p-1080.webp 1080w, images/mockup-riv-marketing-5-p-1600.webp 1600w, images/mockup-riv-marketing-5-p-2000.webp 2000w, images/mockup-riv-marketing-5.webp 2048w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/matimar-5.png" loading="lazy" alt="" sizes="100vw" srcset="images/matimar-5-p-500.png 500w, images/matimar-5-p-800.png 800w, images/matimar-5-p-1080.png 1080w, images/matimar-5.png 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/matimar-4.png" loading="lazy" alt="" sizes="100vw" srcset="images/matimar-4-p-500.png 500w, images/matimar-4-p-800.png 800w, images/matimar-4-p-1080.png 1080w, images/matimar-4.png 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/matimar-3.png" loading="lazy" alt="" sizes="100vw" srcset="images/matimar-3-p-500.png 500w, images/matimar-3-p-800.png 800w, images/matimar-3-p-1080.png 1080w, images/matimar-3.png 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="dercol">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/mockup-riv-marketing-1.webp" loading="lazy" alt="" sizes="100vw" srcset="images/mockup-riv-marketing-1-p-500.webp 500w, images/mockup-riv-marketing-1-p-800.webp 800w, images/mockup-riv-marketing-1-p-1080.webp 1080w, images/mockup-riv-marketing-1-p-1600.webp 1600w, images/mockup-riv-marketing-1.webp 1920w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/mockup-riv-marketing-6.webp" loading="lazy" alt="" sizes="100vw" srcset="images/mockup-riv-marketing-6-p-500.webp 500w, images/mockup-riv-marketing-6-p-800.webp 800w, images/mockup-riv-marketing-6-p-1080.webp 1080w, images/mockup-riv-marketing-6-p-1600.webp 1600w, images/mockup-riv-marketing-6-p-2000.webp 2000w, images/mockup-riv-marketing-6.webp 2048w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d1.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d1-p-500.webp 500w, images/d1-p-800.webp 800w, images/d1-p-1080.webp 1080w, images/d1.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d3.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d3-p-500.webp 500w, images/d3-p-800.webp 800w, images/d3-p-1080.webp 1080w, images/d3.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d4.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d4-p-500.webp 500w, images/d4-p-800.webp 800w, images/d4-p-1080.webp 1080w, images/d4.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d5.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d5-p-500.webp 500w, images/d5-p-800.webp 800w, images/d5-p-1080.webp 1080w, images/d5.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d6.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d6-p-500.webp 500w, images/d6-p-800.webp 800w, images/d6-p-1080.webp 1080w, images/d6.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d7.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d7-p-500.webp 500w, images/d7-p-800.webp 800w, images/d7-p-1080.webp 1080w, images/d7.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d8.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d8-p-500.webp 500w, images/d8-p-800.webp 800w, images/d8-p-1080.webp 1080w, images/d8.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/d9.webp" loading="lazy" alt="" sizes="100vw" srcset="images/d9-p-500.webp 500w, images/d9-p-800.webp 800w, images/d9-p-1080.webp 1080w, images/d9.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="maxitech">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/mockup-riv-marketing-2.webp" loading="lazy" alt="" sizes="100vw" srcset="images/mockup-riv-marketing-2-p-500.webp 500w, images/mockup-riv-marketing-2-p-800.webp 800w, images/mockup-riv-marketing-2-p-1080.webp 1080w, images/mockup-riv-marketing-2-p-1600.webp 1600w, images/mockup-riv-marketing-2.webp 1920w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/m1.webp" loading="lazy" alt="" sizes="100vw" srcset="images/m1-p-500.webp 500w, images/m1-p-800.webp 800w, images/m1-p-1080.webp 1080w, images/m1.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/m2.webp" loading="lazy" alt="" sizes="100vw" srcset="images/m2-p-500.webp 500w, images/m2-p-800.webp 800w, images/m2-p-1080.webp 1080w, images/m2.webp 1440w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/m3.webp" loading="lazy" alt="" sizes="100vw" srcset="images/m3-p-500.webp 500w, images/m3-p-800.webp 800w, images/m3-p-1080.webp 1080w, images/m3.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/m4.webp" loading="lazy" alt="" sizes="100vw" srcset="images/m4-p-500.webp 500w, images/m4-p-800.webp 800w, images/m4-p-1080.webp 1080w, images/m4.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/m5.webp" loading="lazy" alt="" sizes="100vw" srcset="images/m5-p-500.webp 500w, images/m5-p-800.webp 800w, images/m5-p-1080.webp 1080w, images/m5.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/m6.webp" loading="lazy" alt="" sizes="100vw" srcset="images/m6-p-500.webp 500w, images/m6-p-800.webp 800w, images/m6-p-1080.webp 1080w, images/m6.webp 1440w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="wayspomoc">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/2ways-pomoc-website-mockup-8.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2ways-pomoc-website-mockup-8-p-500.webp 500w, images/2ways-pomoc-website-mockup-8-p-800.webp 800w, images/2ways-pomoc-website-mockup-8-p-1080.webp 1080w, images/2ways-pomoc-website-mockup-8-p-1600.webp 1600w, images/2ways-pomoc-website-mockup-8-p-2000.webp 2000w, images/2ways-pomoc-website-mockup-8.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-browser-mockup-13.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-browser-mockup-13-p-500.webp 500w, images/website-browser-mockup-13-p-800.webp 800w, images/website-browser-mockup-13-p-1080.webp 1080w, images/website-browser-mockup-13-p-1600.webp 1600w, images/website-browser-mockup-13.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/2ways-pomoc-website-mockup-4.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2ways-pomoc-website-mockup-4-p-500.webp 500w, images/2ways-pomoc-website-mockup-4-p-800.webp 800w, images/2ways-pomoc-website-mockup-4-p-1080.webp 1080w, images/2ways-pomoc-website-mockup-4-p-1600.webp 1600w, images/2ways-pomoc-website-mockup-4.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-browser-mockup-11.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-browser-mockup-11-p-500.webp 500w, images/website-browser-mockup-11-p-800.webp 800w, images/website-browser-mockup-11-p-1080.webp 1080w, images/website-browser-mockup-11-p-1600.webp 1600w, images/website-browser-mockup-11.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-browser-mockup-12.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-browser-mockup-12-p-500.webp 500w, images/website-browser-mockup-12-p-800.webp 800w, images/website-browser-mockup-12-p-1080.webp 1080w, images/website-browser-mockup-12-p-1600.webp 1600w, images/website-browser-mockup-12.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/Top-View-9.webp" loading="lazy" alt="" sizes="100vw" srcset="images/Top-View-9-p-500.webp 500w, images/Top-View-9-p-800.webp 800w, images/Top-View-9-p-1080.webp 1080w, images/Top-View-9-p-1600.webp 1600w, images/Top-View-9-p-2000.webp 2000w, images/Top-View-9.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="sanivitas">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/san1.webp" loading="lazy" alt="" sizes="100vw" srcset="images/san1-p-500.webp 500w, images/san1-p-800.webp 800w, images/san1-p-1080.webp 1080w, images/san1-p-1600.webp 1600w, images/san1.webp 2000w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/san3.webp" loading="lazy" alt="" sizes="100vw" srcset="images/san3-p-500.webp 500w, images/san3-p-800.webp 800w, images/san3-p-1080.webp 1080w, images/san3-p-1600.webp 1600w, images/san3.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/san4.webp" loading="lazy" alt="" sizes="100vw" srcset="images/san4-p-500.webp 500w, images/san4-p-800.webp 800w, images/san4-p-1080.webp 1080w, images/san4-p-1600.webp 1600w, images/san4.webp 2000w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/san6.webp" loading="lazy" alt="" sizes="100vw" srcset="images/san6-p-500.webp 500w, images/san6-p-800.webp 800w, images/san6-p-1080.webp 1080w, images/san6-p-1600.webp 1600w, images/san6-p-2000.webp 2000w, images/san6.webp 2048w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="waysdachy">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-3-2" class="u-image-wrapper w-variant-57c7d8f5-d942-5de8-0712-e12fff699502" style=""><img src="images/2ways-project-website-mockup-2.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2ways-project-website-mockup-2-p-500.webp 500w, images/2ways-project-website-mockup-2-p-800.webp 800w, images/2ways-project-website-mockup-2-p-1080.webp 1080w, images/2ways-project-website-mockup-2-p-1600.webp 1600w, images/2ways-project-website-mockup-2-p-2000.webp 2000w, images/2ways-project-website-mockup-2.webp 2001w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-5-4" class="u-image-wrapper w-variant-8e41429f-9f9e-7697-357e-815bd3e59383" style=""><img src="images/2k-ways-pl.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2k-ways-pl-p-500.webp 500w, images/2k-ways-pl-p-800.webp 800w, images/2k-ways-pl-p-1080.webp 1080w, images/2k-ways-pl-p-1600.webp 1600w, images/2k-ways-pl.webp 2000w" class="u-image"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-8.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-8-p-500.webp 500w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-8-p-800.webp 800w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-8-p-1080.webp 1080w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-8-p-1600.webp 1600w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-8.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-9.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-9-p-500.webp 500w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-9-p-800.webp 800w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-9-p-1080.webp 1080w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-9-p-1600.webp 1600w, images/2wayys---projekt-strony-intertnetowej---MTK-STUDIO-9.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/2ways-grid-czarny-2k.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2ways-grid-czarny-2k-p-500.webp 500w, images/2ways-grid-czarny-2k-p-800.webp 800w, images/2ways-grid-czarny-2k-p-1080.webp 1080w, images/2ways-grid-czarny-2k-p-1600.webp 1600w, images/2ways-grid-czarny-2k-p-2000.webp 2000w, images/2ways-grid-czarny-2k.webp 2048w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/2ways-project-content-12.webp" loading="lazy" alt="" sizes="100vw" srcset="images/2ways-project-content-12-p-500.webp 500w, images/2ways-project-content-12-p-800.webp 800w, images/2ways-project-content-12-p-1080.webp 1080w, images/2ways-project-content-12-p-1600.webp 1600w, images/2ways-project-content-12.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="icey">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockup-MK---ICEY-ART-17.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockup-MK---ICEY-ART-17-p-500.webp 500w, images/website-mockup-MK---ICEY-ART-17-p-800.webp 800w, images/website-mockup-MK---ICEY-ART-17-p-1080.webp 1080w, images/website-mockup-MK---ICEY-ART-17-p-1600.webp 1600w, images/website-mockup-MK---ICEY-ART-17-p-2000.webp 2000w, images/website-mockup-MK---ICEY-ART-17.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-browser-mockup-9.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-browser-mockup-9-p-500.webp 500w, images/website-browser-mockup-9-p-800.webp 800w, images/website-browser-mockup-9-p-1080.webp 1080w, images/website-browser-mockup-9-p-1600.webp 1600w, images/website-browser-mockup-9-p-2000.webp 2000w, images/website-browser-mockup-9.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-browser-mockup-10.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-browser-mockup-10-p-500.webp 500w, images/website-browser-mockup-10-p-800.webp 800w, images/website-browser-mockup-10-p-1080.webp 1080w, images/website-browser-mockup-10-p-1600.webp 1600w, images/website-browser-mockup-10-p-2000.webp 2000w, images/website-browser-mockup-10.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+                <div data-wf--layout--variant="stack-centered" class="u-layout-wrapper w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c u-margin-bottom-8 u-margin-top-8" data-project-id="dodatki">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper" data-number="12">
+                        <div role="none" data-large-columns="1" data-medium-columns="1" data-small-columns="0" data-xsmall-columns="0" class="u-grid">
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockup-MK---portfolio-3-15.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockup-MK---portfolio-3-15-p-500.webp 500w, images/website-mockup-MK---portfolio-3-15-p-800.webp 800w, images/website-mockup-MK---portfolio-3-15-p-1080.webp 1080w, images/website-mockup-MK---portfolio-3-15-p-1600.webp 1600w, images/website-mockup-MK---portfolio-3-15.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/project_mateusz-kawczyk_website-9.webp" loading="lazy" alt="" sizes="100vw" srcset="images/project_mateusz-kawczyk_website-9-p-500.webp 500w, images/project_mateusz-kawczyk_website-9-p-800.webp 800w, images/project_mateusz-kawczyk_website-9-p-1080.webp 1080w, images/project_mateusz-kawczyk_website-9-p-1600.webp 1600w, images/project_mateusz-kawczyk_website-9.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockup-MK---portfolio-1-9.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockup-MK---portfolio-1-9-p-500.webp 500w, images/website-mockup-MK---portfolio-1-9-p-800.webp 800w, images/website-mockup-MK---portfolio-1-9-p-1080.webp 1080w, images/website-mockup-MK---portfolio-1-9-p-1600.webp 1600w, images/website-mockup-MK---portfolio-1-9.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockup-MK---portfolio-1-8.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockup-MK---portfolio-1-8-p-500.webp 500w, images/website-mockup-MK---portfolio-1-8-p-800.webp 800w, images/website-mockup-MK---portfolio-1-8-p-1080.webp 1080w, images/website-mockup-MK---portfolio-1-8-p-1600.webp 1600w, images/website-mockup-MK---portfolio-1-8-p-2000.webp 2000w, images/website-mockup-MK---portfolio-1-8.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockup-MK---portfolio-1-4.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockup-MK---portfolio-1-4-p-500.webp 500w, images/website-mockup-MK---portfolio-1-4-p-800.webp 800w, images/website-mockup-MK---portfolio-1-4-p-1080.webp 1080w, images/website-mockup-MK---portfolio-1-4-p-1600.webp 1600w, images/website-mockup-MK---portfolio-1-4-p-2000.webp 2000w, images/website-mockup-MK---portfolio-1-4.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockup-MK---portfolio-2-20.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockup-MK---portfolio-2-20-p-500.webp 500w, images/website-mockup-MK---portfolio-2-20-p-800.webp 800w, images/website-mockup-MK---portfolio-2-20-p-1080.webp 1080w, images/website-mockup-MK---portfolio-2-20-p-1600.webp 1600w, images/website-mockup-MK---portfolio-2-20.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockups-MK---designs-7.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockups-MK---designs-7-p-500.webp 500w, images/website-mockups-MK---designs-7-p-800.webp 800w, images/website-mockups-MK---designs-7-p-1080.webp 1080w, images/website-mockups-MK---designs-7-p-1600.webp 1600w, images/website-mockups-MK---designs-7-p-2000.webp 2000w, images/website-mockups-MK---designs-7.webp 2001w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                          <div data-wf--visual-image--variant="wide-16-9" class="u-image-wrapper w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3" style=""><img src="images/website-mockups-MK---matimar-21.webp" loading="lazy" alt="" sizes="100vw" srcset="images/website-mockups-MK---matimar-21-p-500.webp 500w, images/website-mockups-MK---matimar-21-p-800.webp 800w, images/website-mockups-MK---matimar-21-p-1080.webp 1080w, images/website-mockups-MK---matimar-21-p-1600.webp 1600w, images/website-mockups-MK---matimar-21.webp 2000w" class="u-image w-variant-27d05669-180c-3169-9b64-0eda31f8d4d3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2 w-variant-d69d5003-e9bc-b347-4e02-eb46976beb1c  "></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects_meta w-variant-abed2e46-044e-db8d-e420-f41a8503c278">
+                <div data-number="20" data-wf--typography-heading--variant="h3" class="u-text w-variant-701c4b6c-37cf-de59-d80d-80a1822c4994 w-richtext projects_meta_title">
+                  <h2>Matimar</h2>
+                </div>
+                <div data-number="35" data-wf--typography-paragraph--variant="text-small" class="u-text w-variant-4099173f-f581-635c-a5fe-cf4a89c62029 u-rich-text w-richtext projects_meta_desc">
+                  <p>Projekt strony internetowej dla firmy produkcyjnej.<br>Fokus na obsłudze niestandardowych zamówień i usprawnieniu procesu wyceny. Customowy formularz pozwolił przyspieszyć obsługę zapytań i uporządkować komunikację z klientami</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal_nav_bottom">
+            <div class="nav_bottom_wrap is-modal">
+              <div class="nav_bottom_contain u-container">
+                <div class="u-button-wrapper" style="">
+                  <div class="u-display-contents">
+                    <div data-wf--button---modal--variant="primary" data-modal-close="" class="button_main_wrap" data-button=" " data-trigger="hover focus">
+                      <div class="clickable_wrap u-cover-absolute">
+                        <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Zamknij projekty</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Zamknij projekty</span></button>
+                      </div>
+                      <div data-project-button="container" data-toggle-button="" class="button_main_element">
+                        <div class="button_main_icon_logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 32 32" fill="none" class="u-svg">
+                            <path d="M12.5963 31.7619L14.5955 23.0227L0.568042 12.5963L9.30731 14.5955L19.7321 0.567685L17.733 9.30696L31.7623 19.7321L23.0231 17.733L12.5963 31.7619Z" fill="currentColor"></path>
+                          </svg></div>
+                        <div data-default-text="Zamknij projekty" aria-hidden="true" data-project-button="label" class="button_main_text u-text-style-main">Zamknij projekty</div>
+                        <div class="button_main_icon_plus u-hide-if-empty"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 800 800" fill="none" class="u-svg">
+                            <g clip-path="url(#clip0_2391_729)">
+                              <path d="M399.994 0C391.194 0 382.494 0.3 373.844 0.85L377.044 50.75C392.328 49.7622 407.66 49.7622 422.944 50.75L426.144 0.85C417.438 0.285561 408.717 0.0020806 399.994 0ZM321.994 7.6C304.694 11.05 287.794 15.6 271.394 21.1L287.444 68.5C301.794 63.6 316.544 59.65 331.644 56.65L321.994 7.65V7.6ZM528.594 21.15C512.059 15.5442 495.172 11.0344 478.044 7.65L468.344 56.65C483.444 59.65 498.194 63.65 512.544 68.5L528.594 21.15ZM622.244 67.4C607.732 57.6872 592.599 48.9352 576.944 41.2L554.794 86C568.544 92.8 581.794 100.5 594.444 108.95L622.244 67.4ZM222.994 41.2C207.294 48.95 192.194 57.7 177.744 67.4L205.544 108.9C218.252 100.418 231.496 92.7685 245.194 86L222.994 41.2ZM136.244 99.25C123.144 110.75 110.744 123.15 99.2437 136.25L136.844 169.25C146.944 157.75 157.744 146.95 169.244 136.85L136.244 99.25ZM700.744 136.25C689.225 123.128 676.866 110.769 663.744 99.25L630.744 136.85C642.244 146.95 653.094 157.75 663.144 169.25L700.744 136.25ZM758.794 223C751.059 207.36 742.307 192.244 732.594 177.75L691.094 205.55C699.544 218.2 707.194 231.45 713.994 245.2L758.794 223ZM67.3937 177.75C57.6937 192.2 48.8938 207.3 41.1938 223.05L85.9937 245.2C92.7937 231.45 100.494 218.2 108.944 205.55L67.3937 177.75ZM21.1438 271.4C15.5378 287.935 11.028 304.822 7.64375 321.95L56.6437 331.65C59.6437 316.55 63.6437 301.8 68.4937 287.45L21.1438 271.4ZM792.394 322C789.012 304.855 784.502 287.951 778.894 271.4L731.494 287.45C736.394 301.8 740.344 316.55 743.344 331.65L792.344 321.95L792.394 322ZM0.84375 373.85C-0.28125 391.265 -0.28125 408.735 0.84375 426.15L50.7437 422.95C49.756 407.666 49.756 392.334 50.7437 377.05L0.84375 373.85ZM799.994 400C799.992 391.276 799.709 382.555 799.144 373.85L749.244 377.05C750.232 392.334 750.232 407.666 749.244 422.95L799.144 426.15C799.709 417.445 799.992 408.724 799.994 400ZM7.59375 478C11.0437 495.3 15.5938 512.2 21.0938 528.6L68.4937 512.55C63.5761 498.093 59.6175 483.328 56.6437 468.35L7.64375 478.05L7.59375 478ZM778.844 528.6C784.444 512.2 788.944 495.3 792.344 478.05L743.344 468.35C740.344 483.45 736.344 498.2 731.494 512.55L778.844 528.6ZM41.1938 577C48.9308 592.639 57.6829 607.754 67.3937 622.25L108.894 594.45C100.403 581.747 92.7533 568.502 85.9937 554.8L41.1938 576.95V577ZM732.594 622.25C742.294 607.8 751.094 592.7 758.794 576.95L713.994 554.8C707.194 568.55 699.494 581.8 691.044 594.45L732.594 622.25ZM99.2437 663.75C110.744 676.85 123.144 689.25 136.244 700.75L169.244 663.15C157.752 653.064 146.929 642.242 136.844 630.75L99.2437 663.75ZM663.744 700.75C676.844 689.25 689.244 676.85 700.744 663.75L663.144 630.75C653.094 642.25 642.244 653.1 630.744 663.15L663.744 700.75ZM576.994 758.8C592.694 751.05 607.794 742.3 622.244 732.6L594.444 691.1C581.736 699.582 568.491 707.232 554.794 714L576.944 758.8H576.994ZM177.744 732.6C192.194 742.3 207.294 751.1 223.044 758.8L245.194 714C231.49 707.224 218.245 699.558 205.544 691.05L177.744 732.6ZM271.394 778.85C287.794 784.45 304.694 788.95 321.944 792.35L331.644 743.35C316.666 740.375 301.901 736.416 287.444 731.5L271.394 778.85ZM477.994 792.4C495.139 789.018 512.042 784.508 528.594 778.9L512.544 731.5C498.087 736.416 483.321 740.375 468.344 743.35L478.044 792.35L477.994 792.4ZM373.844 799.15C391.259 800.277 408.729 800.277 426.144 799.15L422.944 749.25C407.66 750.239 392.328 750.239 377.044 749.25L373.844 799.15ZM424.994 225C424.994 218.37 422.36 212.011 417.671 207.322C412.983 202.634 406.624 200 399.994 200C393.363 200 387.004 202.634 382.316 207.322C377.628 212.011 374.994 218.37 374.994 225V375H224.994C218.363 375 212.004 377.634 207.316 382.322C202.628 387.011 199.994 393.37 199.994 400C199.994 406.63 202.628 412.989 207.316 417.678C212.004 422.366 218.363 425 224.994 425H374.994V575C374.994 581.63 377.628 587.989 382.316 592.678C387.004 597.366 393.363 600 399.994 600C406.624 600 412.983 597.366 417.671 592.678C422.36 587.989 424.994 581.63 424.994 575V425H574.994C581.624 425 587.983 422.366 592.671 417.678C597.36 412.989 599.994 406.63 599.994 400C599.994 393.37 597.36 387.011 592.671 382.322C587.983 377.634 581.624 375 574.994 375H424.994V225Z" fill="currentColor"></path>
+                            </g>
+                          </svg></div>
+                        <div class="button_main_line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-embed-js w-embed w-script">
+          <script>
+document.addEventListener("DOMContentLoaded", function () {
+	const modalSystem = ((window.lumos ??= {}).modal ??= {
+		list: {}, open(id) { this.list[id]?.open?.(); }, closeAll() { Object.values(this.list).forEach((m) => m.close?.()); },
+	});
+	function createModals() {
+		document.querySelectorAll(".modal_dialog").forEach(function (modal) {
+			if (modal.dataset.scriptInitialized) return;
+			modal.dataset.scriptInitialized = "true";
+			const modalId = modal.getAttribute("data-modal-target");
+			const variant = modal.getAttribute("data-wf--modal--variant");
+			let lastFocusedElement;
+			if (typeof gsap !== "undefined") {
+				gsap.context(() => {
+					let tl = gsap.timeline({ paused: true, onReverseComplete: resetModal });
+					if (variant === "side-panel") {
+						tl.fromTo(".modal_backdrop", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" });
+						tl.from(".modal_content", { xPercent: 100, duration: 0.3, ease: "power1.out" }, "<");
+					} else if (variant === "full-screen") {
+						tl.set(".modal_backdrop", { opacity: 0 });
+						tl.from(".modal_content", { opacity: 0, duration: 0.2, ease: "power1.out" });
+						tl.from(".modal_slot", { opacity: 0, y: "2rem", duration: 0.2, ease: "power1.out" }, "<0.1");
+          } else if (variant === "full-screen-kontakt") {
+						tl.set(".modal_backdrop", { opacity: 0 });
+						tl.from(".modal_content", { opacity: 0, duration: 0.2, ease: "power1.out" });
+						tl.from(".modal_slot", { opacity: 0, y: "2rem", duration: 0.2, ease: "power1.out" }, "<0.1");
+					} else {
+						tl.fromTo(".modal_backdrop", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" });
+						tl.from(".modal_content", { opacity: 0, y: "6rem", duration: 0.3, ease: "power1.out" }, "<");
+					}
+					modal.tl = tl;
+				}, modal);
+			}
+			function resetModal() {
+				typeof lenis !== "undefined" && lenis.start ? lenis.start() : (document.body.style.overflow = "");
+				modal.close();
+				if (lastFocusedElement) lastFocusedElement.focus();
+				window.dispatchEvent(new CustomEvent("modal-close", { detail: { modal } }));
+			}
+			function openModal() {
+				typeof lenis !== "undefined" && lenis.stop ? lenis.stop() : (document.body.style.overflow = "hidden");
+				lastFocusedElement = document.activeElement;
+				modal.showModal();
+				if (typeof gsap !== "undefined") modal.tl.play();
+				modal.querySelectorAll("[data-modal-scroll]").forEach((el) => (el.scrollTop = 0));
+				window.dispatchEvent(new CustomEvent("modal-open", { detail: { modal } }));
+			}
+			function closeModal() {
+				typeof gsap !== "undefined" ? modal.tl.reverse() : resetModal();
+			}
+			if (new URLSearchParams(location.search).get("modal-id") === modalId) openModal(), history.replaceState({}, "", ((u) => (u.searchParams.delete("modal-id"), u))(new URL(location.href)));
+			modal.addEventListener("cancel", (e) => (e.preventDefault(), closeModal()));
+			modal.addEventListener("click", (e) => e.target.closest("[data-modal-close]") && closeModal());
+			document.addEventListener("click", (e) => {
+				const trigger = e.target.closest(`[data-modal-trigger='${modalId}'], a[href='#${modalId}']`);
+				if (!trigger) return;
+				if (trigger.tagName === "A") e.preventDefault();
+				openModal();
+			});
+			modalSystem.list[modalId] = { open: openModal, close: closeModal };
+		});
+	}
+	createModals();
+});
+</script>
+        </div>
+      </dialog>
+      <dialog data-wf--modal--variant="full-screen-kontakt" data-modal-target="modal-2" data-show-in-designer="true" class="modal_dialog">
+        <div class="u-embed-css w-embed">
+          <style>
+.modal_dialog::backdrop { opacity: 0; }
+.wf-design-mode [data-show-in-designer="true"] {
+	display: block;
+}
+</style>
+        </div>
+        <div class="modal_inner w-variant-621cf1c5-53cc-c3fd-e794-620c683bfa9e">
+          <div data-modal-close="" class="modal_backdrop"></div>
+          <div class="modal_content w-variant-621cf1c5-53cc-c3fd-e794-620c683bfa9e">
+            <div data-lenis-prevent=" " data-modal-scroll="" class="modal_scroll w-variant-621cf1c5-53cc-c3fd-e794-620c683bfa9e">
+              <div class="modal_close w-variant-621cf1c5-53cc-c3fd-e794-620c683bfa9e">
+                <div data-wf--button-close--variant="secondary-medium" data-modal-close=" " class="button_close_wrap" autofocus=" " data-button=" " data-trigger="hover focus">
+                  <div class="button_close_element w-variant-c144d67f-2c62-4dbf-0fd8-0b6056b717ec">
+                    <div aria-hidden="true" class="button_close_icon w-variant-c144d67f-2c62-4dbf-0fd8-0b6056b717ec"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 800 800" fill="none" class="u-svg">
+                        <g clip-path="url(#clip0_2391_729)">
+                          <path d="M399.994 0C391.194 0 382.494 0.3 373.844 0.85L377.044 50.75C392.328 49.7622 407.66 49.7622 422.944 50.75L426.144 0.85C417.438 0.285561 408.717 0.0020806 399.994 0ZM321.994 7.6C304.694 11.05 287.794 15.6 271.394 21.1L287.444 68.5C301.794 63.6 316.544 59.65 331.644 56.65L321.994 7.65V7.6ZM528.594 21.15C512.059 15.5442 495.172 11.0344 478.044 7.65L468.344 56.65C483.444 59.65 498.194 63.65 512.544 68.5L528.594 21.15ZM622.244 67.4C607.732 57.6872 592.599 48.9352 576.944 41.2L554.794 86C568.544 92.8 581.794 100.5 594.444 108.95L622.244 67.4ZM222.994 41.2C207.294 48.95 192.194 57.7 177.744 67.4L205.544 108.9C218.252 100.418 231.496 92.7685 245.194 86L222.994 41.2ZM136.244 99.25C123.144 110.75 110.744 123.15 99.2437 136.25L136.844 169.25C146.944 157.75 157.744 146.95 169.244 136.85L136.244 99.25ZM700.744 136.25C689.225 123.128 676.866 110.769 663.744 99.25L630.744 136.85C642.244 146.95 653.094 157.75 663.144 169.25L700.744 136.25ZM758.794 223C751.059 207.36 742.307 192.244 732.594 177.75L691.094 205.55C699.544 218.2 707.194 231.45 713.994 245.2L758.794 223ZM67.3937 177.75C57.6937 192.2 48.8938 207.3 41.1938 223.05L85.9937 245.2C92.7937 231.45 100.494 218.2 108.944 205.55L67.3937 177.75ZM21.1438 271.4C15.5378 287.935 11.028 304.822 7.64375 321.95L56.6437 331.65C59.6437 316.55 63.6437 301.8 68.4937 287.45L21.1438 271.4ZM792.394 322C789.012 304.855 784.502 287.951 778.894 271.4L731.494 287.45C736.394 301.8 740.344 316.55 743.344 331.65L792.344 321.95L792.394 322ZM0.84375 373.85C-0.28125 391.265 -0.28125 408.735 0.84375 426.15L50.7437 422.95C49.756 407.666 49.756 392.334 50.7437 377.05L0.84375 373.85ZM799.994 400C799.992 391.276 799.709 382.555 799.144 373.85L749.244 377.05C750.232 392.334 750.232 407.666 749.244 422.95L799.144 426.15C799.709 417.445 799.992 408.724 799.994 400ZM7.59375 478C11.0437 495.3 15.5938 512.2 21.0938 528.6L68.4937 512.55C63.5761 498.093 59.6175 483.328 56.6437 468.35L7.64375 478.05L7.59375 478ZM778.844 528.6C784.444 512.2 788.944 495.3 792.344 478.05L743.344 468.35C740.344 483.45 736.344 498.2 731.494 512.55L778.844 528.6ZM41.1938 577C48.9308 592.639 57.6829 607.754 67.3937 622.25L108.894 594.45C100.403 581.747 92.7533 568.502 85.9937 554.8L41.1938 576.95V577ZM732.594 622.25C742.294 607.8 751.094 592.7 758.794 576.95L713.994 554.8C707.194 568.55 699.494 581.8 691.044 594.45L732.594 622.25ZM99.2437 663.75C110.744 676.85 123.144 689.25 136.244 700.75L169.244 663.15C157.752 653.064 146.929 642.242 136.844 630.75L99.2437 663.75ZM663.744 700.75C676.844 689.25 689.244 676.85 700.744 663.75L663.144 630.75C653.094 642.25 642.244 653.1 630.744 663.15L663.744 700.75ZM576.994 758.8C592.694 751.05 607.794 742.3 622.244 732.6L594.444 691.1C581.736 699.582 568.491 707.232 554.794 714L576.944 758.8H576.994ZM177.744 732.6C192.194 742.3 207.294 751.1 223.044 758.8L245.194 714C231.49 707.224 218.245 699.558 205.544 691.05L177.744 732.6ZM271.394 778.85C287.794 784.45 304.694 788.95 321.944 792.35L331.644 743.35C316.666 740.375 301.901 736.416 287.444 731.5L271.394 778.85ZM477.994 792.4C495.139 789.018 512.042 784.508 528.594 778.9L512.544 731.5C498.087 736.416 483.321 740.375 468.344 743.35L478.044 792.35L477.994 792.4ZM373.844 799.15C391.259 800.277 408.729 800.277 426.144 799.15L422.944 749.25C407.66 750.239 392.328 750.239 377.044 749.25L373.844 799.15ZM424.994 225C424.994 218.37 422.36 212.011 417.671 207.322C412.983 202.634 406.624 200 399.994 200C393.363 200 387.004 202.634 382.316 207.322C377.628 212.011 374.994 218.37 374.994 225V375H224.994C218.363 375 212.004 377.634 207.316 382.322C202.628 387.011 199.994 393.37 199.994 400C199.994 406.63 202.628 412.989 207.316 417.678C212.004 422.366 218.363 425 224.994 425H374.994V575C374.994 581.63 377.628 587.989 382.316 592.678C387.004 597.366 393.363 600 399.994 600C406.624 600 412.983 597.366 417.671 592.678C422.36 587.989 424.994 581.63 424.994 575V425H574.994C581.624 425 587.983 422.366 592.671 417.678C597.36 412.989 599.994 406.63 599.994 400C599.994 393.37 597.36 387.011 592.671 382.322C587.983 377.634 581.624 375 574.994 375H424.994V225Z" fill="currentColor"></path>
+                        </g>
+                      </svg></div>
+                  </div>
+                  <div class="clickable_wrap u-cover-absolute">
+                    <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Close</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Close</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_slot w-variant-621cf1c5-53cc-c3fd-e794-620c683bfa9e">
+                <div data-wf--layout--variant="stack" class="u-layout-wrapper" data-project-id="">
+                  <div class="u-layout">
+                    <div class="u-layout-column-1  ">
+                      <div data-number="20" data-wf--typography-heading--variant="h3" class="u-text w-variant-701c4b6c-37cf-de59-d80d-80a1822c4994 w-richtext  ">
+                        <h2>Kontakt</h2>
+                      </div>
+                      <div data-number="49" data-wf--typography-paragraph--variant="h4" class="u-text w-variant-93e8af18-8413-e3ac-0442-72629401a3db u-rich-text w-richtext u-margin-bottom-8">
+                        <p>Masz pomysł, pytanie albo konkretny temat?<br>Zadzwoń lub napisz, zobaczymy, czy i jak mogę pomóc</p>
+                      </div>
+                    </div>
+                    <div class="u-layout-column-2  ">
+                      <div data-wf--grid--variant="default" style="" class="u-grid-wrapper u-gap-row-6" data-number="12">
+                        <div role="list" data-large-columns="2" data-medium-columns="2" data-small-columns="1" data-xsmall-columns="0" class="u-grid">
+                          <div class="u-button-wrapper" style="">
+                            <div class="u-display-contents">
+                              <div data-wf--button-main--variant="link" class="button_main_wrap w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400" data-button=" " data-trigger="hover focus">
+                                <div class="clickable_wrap u-cover-absolute">
+                                  <a target="" href="tel:570878182" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">570 878 182</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">570 878 182</span></button>
+                                </div>
+                                <div class="button_main_element w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400">
+                                  <div aria-hidden="true" class="button_main_text u-text-style-main">570 878 182</div>
+                                  <div class="button_main_icon u-hide-if-empty"></div>
+                                  <div class="button_main_line w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="u-button-wrapper" style="">
+                            <div class="u-display-contents">
+                              <div data-wf--button-main--variant="link" class="button_main_wrap w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400" data-button=" " data-trigger="hover focus">
+                                <div class="clickable_wrap u-cover-absolute">
+                                  <a target="" href="mailto:mtkawczyk@gmail.com" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">mtkawczyk@gmail.com</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">mtkawczyk@gmail.com</span></button>
+                                </div>
+                                <div class="button_main_element w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400">
+                                  <div aria-hidden="true" class="button_main_text u-text-style-main">mtkawczyk@gmail.com</div>
+                                  <div class="button_main_icon u-hide-if-empty"></div>
+                                  <div class="button_main_line w-variant-625d5df4-ad91-f7dc-9e2f-2e69f3fd7400"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects_meta">
+                <div data-number="20" data-wf--typography-heading--variant="h3" class="u-text w-variant-701c4b6c-37cf-de59-d80d-80a1822c4994 w-richtext projects_meta_title">
+                  <h2>Matimar</h2>
+                </div>
+                <div data-number="35" data-wf--typography-paragraph--variant="text-small" class="u-text w-variant-4099173f-f581-635c-a5fe-cf4a89c62029 u-rich-text w-richtext projects_meta_desc">
+                  <p>Projekt strony internetowej dla firmy produkcyjnej.<br>Fokus na obsłudze niestandardowych zamówień i usprawnieniu procesu wyceny. Customowy formularz pozwolił przyspieszyć obsługę zapytań i uporządkować komunikację z klientami</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal_nav_bottom">
+            <div class="nav_top_wrap">
+              <div class="nav_top_contain u-container">
+                <div href="#" aria-label="Powrót" class="nav_logo_link"><svg data-w-id="bb85231d-ee01-4d2d-a805-3e4ef4b30e5f" xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 184 184" fill="none" class="nav_logo_svg">
+                    <path d="M75.9236 161.592L84.8594 122.528L22.1583 75.9235L61.222 84.8594L107.82 22.1566L98.8837 61.2203L161.594 107.82L122.53 98.8837L75.9236 161.592Z" fill="currentColor"></path>
+                  </svg>
+                  <div class="logo_text">RIV.MARKETING</div>
+                </div>
+                <div data-wf--button-main--variant="secondary" data-modal-close="" class="button_main_wrap" data-button=" " data-trigger="hover focus">
+                  <div class="clickable_wrap u-cover-absolute">
+                    <a target="" href="#" class="clickable_link w-inline-block"><span class="clickable_text u-sr-only">Powrót</span></a><button type="button" class="clickable_btn"><span class="clickable_text u-sr-only">Powrót</span></button>
+                  </div>
+                  <div class="button_main_element w-variant-e85564cd-af30-a478-692b-71732aefb3ab">
+                    <div aria-hidden="true" class="button_main_text u-text-style-main">Powrót</div>
+                    <div class="button_main_icon u-hide-if-empty"></div>
+                    <div class="button_main_line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-embed-js w-embed w-script">
+          <script>
+document.addEventListener("DOMContentLoaded", function () {
+	const modalSystem = ((window.lumos ??= {}).modal ??= {
+		list: {}, open(id) { this.list[id]?.open?.(); }, closeAll() { Object.values(this.list).forEach((m) => m.close?.()); },
+	});
+	function createModals() {
+		document.querySelectorAll(".modal_dialog").forEach(function (modal) {
+			if (modal.dataset.scriptInitialized) return;
+			modal.dataset.scriptInitialized = "true";
+			const modalId = modal.getAttribute("data-modal-target");
+			const variant = modal.getAttribute("data-wf--modal--variant");
+			let lastFocusedElement;
+			if (typeof gsap !== "undefined") {
+				gsap.context(() => {
+					let tl = gsap.timeline({ paused: true, onReverseComplete: resetModal });
+					if (variant === "side-panel") {
+						tl.fromTo(".modal_backdrop", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" });
+						tl.from(".modal_content", { xPercent: 100, duration: 0.3, ease: "power1.out" }, "<");
+					} else if (variant === "full-screen") {
+						tl.set(".modal_backdrop", { opacity: 0 });
+						tl.from(".modal_content", { opacity: 0, duration: 0.2, ease: "power1.out" });
+						tl.from(".modal_slot", { opacity: 0, y: "2rem", duration: 0.2, ease: "power1.out" }, "<0.1");
+          } else if (variant === "full-screen-kontakt") {
+						tl.set(".modal_backdrop", { opacity: 0 });
+						tl.from(".modal_content", { opacity: 0, duration: 0.2, ease: "power1.out" });
+						tl.from(".modal_slot", { opacity: 0, y: "2rem", duration: 0.2, ease: "power1.out" }, "<0.1");
+					} else {
+						tl.fromTo(".modal_backdrop", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" });
+						tl.from(".modal_content", { opacity: 0, y: "6rem", duration: 0.3, ease: "power1.out" }, "<");
+					}
+					modal.tl = tl;
+				}, modal);
+			}
+			function resetModal() {
+				typeof lenis !== "undefined" && lenis.start ? lenis.start() : (document.body.style.overflow = "");
+				modal.close();
+				if (lastFocusedElement) lastFocusedElement.focus();
+				window.dispatchEvent(new CustomEvent("modal-close", { detail: { modal } }));
+			}
+			function openModal() {
+				typeof lenis !== "undefined" && lenis.stop ? lenis.stop() : (document.body.style.overflow = "hidden");
+				lastFocusedElement = document.activeElement;
+				modal.showModal();
+				if (typeof gsap !== "undefined") modal.tl.play();
+				modal.querySelectorAll("[data-modal-scroll]").forEach((el) => (el.scrollTop = 0));
+				window.dispatchEvent(new CustomEvent("modal-open", { detail: { modal } }));
+			}
+			function closeModal() {
+				typeof gsap !== "undefined" ? modal.tl.reverse() : resetModal();
+			}
+			if (new URLSearchParams(location.search).get("modal-id") === modalId) openModal(), history.replaceState({}, "", ((u) => (u.searchParams.delete("modal-id"), u))(new URL(location.href)));
+			modal.addEventListener("cancel", (e) => (e.preventDefault(), closeModal()));
+			modal.addEventListener("click", (e) => e.target.closest("[data-modal-close]") && closeModal());
+			document.addEventListener("click", (e) => {
+				const trigger = e.target.closest(`[data-modal-trigger='${modalId}'], a[href='#${modalId}']`);
+				if (!trigger) return;
+				if (trigger.tagName === "A") e.preventDefault();
+				openModal();
+			});
+			modalSystem.list[modalId] = { open: openModal, close: closeModal };
+		});
+	}
+	createModals();
+});
+</script>
+        </div>
+      </dialog>
+    </main>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=696f571bfbae717b915a9ca7" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.button_main_wrap');
+  if (!buttons.length) return;
+  buttons.forEach(wrapper => {
+    const logo = wrapper.querySelector('.button_main_icon_logo');
+    const plus = wrapper.querySelector('.button_main_icon_plus');
+    if (!logo || !plus) return;
+    let isActive = false;
+    const tl = gsap.timeline({ paused: true });
+    tl.to(logo, {
+      width: '1.5rem',
+      marginRight: '0.75rem',
+      opacity: 1,
+      x: 0,
+      rotate: 180,
+      duration: 0.4,
+      ease: 'power3.out'
+    }, 0)
+    .to(plus, {
+      rotate: 45,
+      duration: 0.25,
+      ease: 'power2.out'
+    }, 0);
+    // HOVER (tylko gdy modal zamknięty)
+    wrapper.addEventListener('mouseenter', () => {
+      if (isActive) return;
+      tl.play();
+    });
+    wrapper.addEventListener('mouseleave', () => {
+      if (isActive) return;
+      tl.reverse();
+    });
+    // MODAL OPEN
+    window.addEventListener('modal-open', (e) => {
+      if (e.detail?.modal?.dataset?.modalTarget === 'modal-1') {
+        isActive = true;
+        tl.play();
+      }
+    });
+    // MODAL CLOSE
+    window.addEventListener('modal-close', (e) => {
+      if (e.detail?.modal?.dataset?.modalTarget === 'modal-1') {
+        isActive = false;
+        tl.reverse();
+      }
+    });
+  });
+});
+</script>
+  <script>
+console.log("SCRIPT LOADED");
+document.addEventListener("DOMContentLoaded", () => {
+  /* ===============================
+     1. DANE PROJEKTÓW
+  =============================== */
+  const PROJECTS = {
+    matimar: {
+      title: "Matimar",
+      description: `
+      Projekt strony internetowej dla firmy produkcyjnej.
+      Fokus na obsłudze niestandardowych zamówień i usprawnieniu procesu wyceny.
+      Customowy formularz pozwolił przyspieszyć obsługę zapytań i uporządkować komunikację z klientami
+      `,
+    },
+    dercol: {
+      title: "Dercol",
+      description: `
+      Strona producenta chemii budowlanej. 
+      Skupienie na unowocześnieniu wizerunku i czytelnej prezentacji produktów. 
+      Klienci mogą samodzielnie przeglądać wzorniki, cenniki i specyfikacje bez potrzeby kontaktu
+      `,
+    },
+    maxitech: {
+      title: "Maxitech",
+      description: `
+      Strona wizerunkowo-ofertowa dla grupy budowlanej.
+      Fokus na wiarygodności, prezentacji partnerstwa z producentem oraz jasnym zakresie usług.
+      Strona pełni rolę pierwszego showroomu i zbiera leady na bezpłatny pomiar
+      `,
+    },
+    waysdachy: {
+      title: "2ways v1",
+      description: `
+      Strona wizerunkowa dla firmy specjalizującej się w dachach płaskich.
+      Fokus na budowie zaufania i prezentacji dotychczasowych realizacji.
+      Projekt oparty o portfolio i jasne pokazanie zakresu prac
+      `,
+    },
+    wayspomoc: {
+      title: "2ways v2",
+      description: `
+      Landing page dla nowej usługi pomocy drogowej.
+      Projekt stworzony do przetestowania oferty i konkurencyjności na rynku.
+      Prosta forma, szybki przekaz i jednoznaczny cel: kontakt
+      `,
+    },
+    sanivitas: {
+      title: "Sanivitas",
+      description: `
+      Strona informacyjna dla sieci przychodni lekarskich.
+      Skupienie na czytelnej prezentacji usług i problemów pacjentów.
+      Struktura strony ułatwia znalezienie właściwego specjalisty i potrzebnych informacji
+      `,
+    },
+    icey: {
+      title: "Icey",
+      description: `
+      Portfolio ilustratora i grafika komputerowego.
+      Minimalistyczna forma podporządkowana pracom i stylowi autora.
+      Projekt skupiony na ekspozycji i spójnym wizerunku
+      `,
+    },
+    dodatki: {
+      title: "Dodatki",
+      description: `
+      Starsze projekty, wcześniejsze wersje stron i koncepty
+      `,
+    },
+  };
+  /* ===============================
+     2. ELEMENTY DOM
+  =============================== */
+  const items = document.querySelectorAll(".u-layout-wrapper[data-project-id]");
+  const titleEl = document.querySelector(".projects_meta_title");
+  const descEl = document.querySelector(".projects_meta_desc");
+  const scrollRoot = document.querySelector(".modal_scroll");
+  const projectButtonTextEls = document.querySelectorAll(
+    '[data-project-button="label"]'
+  );
+  if (!items.length || !titleEl || !descEl || !scrollRoot) {
+    console.warn("Projects meta: missing elements");
+    return;
+  }
+  let activeId = null;
+  let isAnimating = false;
+  /* ===============================
+     3. ANIMACJA ZMIANY TEKSTU
+  =============================== */
+  function updateMeta(title, desc) {
+    if (isAnimating) return;
+    isAnimating = true;
+    gsap
+      .timeline({
+        onComplete: () => (isAnimating = false),
+      })
+      .to([titleEl, descEl], {
+        opacity: 0,
+        y: 12,
+        duration: 0.25,
+        ease: "power2.out",
+      })
+      .add(() => {
+        titleEl.textContent = title;
+        descEl.textContent = desc;
+      })
+      .to([titleEl, descEl], {
+        opacity: 1,
+        y: 0,
+        duration: 0.25,
+        ease: "power2.out",
+      });
+  }
+  function updateProjectButtonText(text) {
+    if (!projectButtonTextEls.length) return;
+    gsap
+      .timeline()
+      .to(projectButtonTextEls, {
+        opacity: 0,
+        y: 6,
+        duration: 0.2,
+        ease: "power2.out",
+      })
+      .add(() => {
+        projectButtonTextEls.forEach((el) => {
+          el.textContent = text;
+        });
+      })
+      .to(projectButtonTextEls, {
+        opacity: 1,
+        y: 0,
+        duration: 0.2,
+        ease: "power2.out",
+      });
+  }
+  function resetProjectButtonText() {
+    projectButtonTextEls.forEach((el) => {
+      const fallback = el.dataset.defaultText;
+      if (fallback) el.textContent = fallback;
+    });
+  }
+  /* ===============================
+     4. INTERSECTION OBSERVER (CENTER)
+  =============================== */
+  const observer = new IntersectionObserver(
+    (entries) => {
+      let bestEntry = null;
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        if (
+          !bestEntry ||
+          entry.intersectionRatio > bestEntry.intersectionRatio
+        ) {
+          bestEntry = entry;
+        }
+      });
+      if (!bestEntry) return;
+      const id = bestEntry.target.dataset.projectId;
+      if (!id || id === activeId) return;
+      const data = PROJECTS[id];
+      if (!data) return;
+      activeId = id;
+      updateMeta(data.title, data.description);
+      updateProjectButtonText(data.title);
+    },
+    {
+      root: scrollRoot,
+      rootMargin: "-35% 0px -35% 0px",
+      threshold: [0, 0.25, 0.5, 0.75],
+    }
+  );
+  items.forEach((item) => observer.observe(item));
+  /* ===============================
+     5. STAN POCZĄTKOWY
+  =============================== */
+  const firstItem = items[0];
+  const firstId = firstItem.dataset.projectId;
+  const firstData = PROJECTS[firstId];
+  if (firstData) {
+    activeId = firstId;
+    titleEl.textContent = firstData.title;
+    descEl.textContent = firstData.description;
+    updateProjectButtonText(firstData.title);
+  }
+  /* ===============================
+     6. RESET TEKSTU PRZYCISKU PO ZAMKNIĘCIU MODALA
+  =============================== */
+  window.addEventListener("modal-close", () => {
+    resetProjectButtonText();
+  });
+ /* ===============================
+   7. PEWNY RESET STANU PRZY OTWARCIU MODALA
+=============================== */
+window.addEventListener("modal-open", () => {
+  // reset stanu
+  activeId = null;
+  // poczekaj aż modal:
+  // 1. się otworzy
+  // 2. zresetuje scrollTop
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      scrollRoot.scrollTop = 0;
+      const firstItem = items[0];
+      if (!firstItem) return;
+      const firstId = firstItem.dataset.projectId;
+      const firstData = PROJECTS[firstId];
+      if (!firstData) return;
+      updateMeta(firstData.title, firstData.description);
+      updateProjectButtonText(firstData.title);
+    }, 50);
+  });
+});
+});
+</script>
+</body>
+</html>
